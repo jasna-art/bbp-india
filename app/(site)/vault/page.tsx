@@ -40,33 +40,7 @@ export default function VaultPage() {
       </section>
 
       {/* The fish, retired */}
-      <section className="container-bbp section-y">
-        <SectionHeader
-          eyebrow="The fish, retired"
-          headline={<>Honoured here. Where it belongs.</>}
-        />
-        <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-[40%_1fr] lg:items-start">
-          <DummyImage
-            aspect="square"
-            label="Darwin's Fish"
-            caption="2016–2025 · retired wordmark"
-          />
-          <div className="flex flex-col gap-6">
-            <p className="font-sans text-body text-ink">
-              For nine years, BBP's mark was a walking fish — Darwin's Fish —
-              a sketch from the original theory of evolution. In 2025, we
-              retired the fish and shipped a new identity system that better
-              matched the consultancy we've become. The fish is honoured
-              here, in the Vault, where it belongs.
-            </p>
-            <div>
-              <TextCTA href="/thinking/bury-the-fish">
-                Read the essay — "It's Time to Bury the Fish"
-              </TextCTA>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }
