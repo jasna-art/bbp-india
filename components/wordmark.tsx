@@ -6,11 +6,11 @@ type Size = "display" | "desktop" | "mobile" | "footer" | "small";
 type Tone = "ink" | "canvas";
 
 const LOGO_SIZE_CLASS: Record<Size, string> = {
-  display: "w-[180px]",
-  desktop: "w-[80px]",
-  mobile: "w-[100px]",
-  footer: "w-[110px]",
-  small: "w-[80px]",
+  display: "h-[56px] w-auto",
+  desktop: "h-[34px] w-auto",
+  mobile: "h-[30px] w-auto",
+  footer: "h-[34px] w-auto",
+  small: "h-[24px] w-auto",
 };
 
 export function Wordmark({
