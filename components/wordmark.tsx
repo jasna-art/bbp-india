@@ -6,11 +6,11 @@ type Size = "display" | "desktop" | "mobile" | "footer" | "small";
 type Tone = "ink" | "canvas";
 
 const LOGO_SIZE_CLASS: Record<Size, string> = {
-  display: "h-[56px] w-auto",
+  display: "h-[48px] w-auto",
   desktop: "h-[26px] w-auto",
-  mobile: "h-[30px] w-auto",
-  footer: "h-[34px] w-auto",
-  small: "h-[24px] w-auto",
+  mobile: "h-[24px] w-auto",
+  footer: "h-[30px] w-auto",
+  small: "h-[20px] w-auto",
 };
 
 export function Wordmark({
@@ -30,7 +30,7 @@ export function Wordmark({
       alt="BBP India"
       width={80}
       height={52}
-      className={cn("h-auto", LOGO_SIZE_CLASS[size], className)}
+    className={cn("block object-contain", LOGO_SIZE_CLASS[size], className)}
       priority
     />
   );
