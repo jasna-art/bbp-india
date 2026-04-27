@@ -40,7 +40,7 @@ export function Wordmark({
         className,
       )}
     >
-      BBP
+      BBP INDIA
     </span>
   );
 
