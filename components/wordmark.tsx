@@ -26,13 +26,13 @@ export function Wordmark({
 }) {
   const inner = (
     <Image
-      src="/logo.png"
-      alt="BBP India"
-      width={80}
-      height={52}
-    className={cn("block object-contain", LOGO_SIZE_CLASS[size], className)}
-      priority
-    />
+  src="/logo.png"
+  alt="BBP India"
+  width={80}
+  height={52}
+  className={cn("block object-contain !h-[26px] !w-auto", className)}
+  priority
+/>
   );
 
   if (!asLink) return inner;
