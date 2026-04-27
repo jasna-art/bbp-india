@@ -28,8 +28,8 @@ export function Wordmark({
     <Image
       src="/logo.png"
       alt="BBP India"
-      width={180}
-      height={72}
+      width={110}
+      height={62}
       className={cn("h-auto", LOGO_SIZE_CLASS[size], className)}
       priority
     />
