@@ -28,7 +28,26 @@ export function SiteHeader() {
     if (href === "/") return pathname === "/";
     return pathname?.startsWith(href) ?? false;
   };
+const visibleNav = PRIMARY_NAV
+    .filter((item) => {
+      if ("href" in item) {
+        return item.href !== "/vault" && item.label !== "Vault";
+      }
 
+      return item.label !== "Vault";
+    })
+    .map((item) => {
+      if (item.children) {
+        return {
+          ...item,
+          children: item.children.filter(
+            (child) => child.href !== "/vault" && child.label !== "Vault",
+          ),
+        };
+      }
+
+      return item;
+    });
   return (
     <header
       className={cn(
