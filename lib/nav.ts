@@ -34,7 +34,7 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "Life at BBP", href: "/life" },
       { label: "Work with Us", href: "/work-with-us" },
       { label: "Learn with Us", href: "/learn-with-us" },
-      { label: "Vault", href: "/vault" },
+    
     ],
   },
   { label: "Connect", href: "/connect" },
