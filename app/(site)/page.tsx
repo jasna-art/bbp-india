@@ -284,8 +284,8 @@ export default function Home() {
       <Image
         src={client.logo}
         alt={`${client.name} logo`}
-        width={180}
-        height={90}
+        width={260}
+  height={130}
         className="max-h-16 w-auto object-contain grayscale"
       />
     </li>
