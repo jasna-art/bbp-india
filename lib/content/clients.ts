@@ -1,19 +1,49 @@
 export type Client = {
   name: string;
   industry: string;
+  logo: string;
   isPlaceholder?: boolean;
 };
 
-// Placeholder client wall for the homepage Selected Work section. The visual
-// treatment should be a monochrome wordmark per client; here each tile renders
-// the placeholder name in serif. Replace with real logos + permissions.
 export const CLIENTS: readonly Client[] = [
-  { name: "Brand Alpha", industry: "FMCG", isPlaceholder: true },
-  { name: "Brand Beta", industry: "Jewellery", isPlaceholder: true },
-  { name: "Brand Gamma", industry: "Hospitality", isPlaceholder: true },
-  { name: "Brand Delta", industry: "Education", isPlaceholder: true },
-  { name: "Brand Epsilon", industry: "D2C", isPlaceholder: true },
-  { name: "Brand Zeta", industry: "Retail", isPlaceholder: true },
-  { name: "Brand Eta", industry: "FMCG", isPlaceholder: true },
-  { name: "Brand Theta", industry: "Family Business", isPlaceholder: true },
+  {
+    name: "Brand Alpha",
+    industry: "FMCG",
+    logo: "/brand-logos/brand-alpha.png",
+  },
+  {
+    name: "Brand Beta",
+    industry: "Jewellery",
+    logo: "/brand-logos/brand-beta.png",
+  },
+  {
+    name: "Brand Gamma",
+    industry: "Hospitality",
+    logo: "/brand-logos/brand-gamma.png",
+  },
+  {
+    name: "Brand Delta",
+    industry: "Education",
+    logo: "/brand-logos/brand-delta.png",
+  },
+  {
+    name: "Brand Epsilon",
+    industry: "D2C",
+    logo: "/brand-logos/brand-epsilon.png",
+  },
+  {
+    name: "Brand Zeta",
+    industry: "Retail",
+    logo: "/brand-logos/brand-zeta.png",
+  },
+  {
+    name: "Brand Eta",
+    industry: "FMCG",
+    logo: "/brand-logos/brand-eta.png",
+  },
+  {
+    name: "Brand Theta",
+    industry: "Family Business",
+    logo: "/brand-logos/brand-theta.png",
+  },
 ];
