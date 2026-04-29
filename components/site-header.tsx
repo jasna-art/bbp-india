@@ -162,7 +162,7 @@ const visibleNav = PRIMARY_NAV
           </Link>
         </nav>
 
-        <MobileMenu nav={PRIMARY_NAV} className="lg:hidden" />
+        <MobileMenu nav={visibleNav} className="lg:hidden" />
       </div>
     </header>
   );
