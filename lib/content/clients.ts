@@ -7,43 +7,53 @@ export type Client = {
 
 export const CLIENTS: readonly Client[] = [
   {
-    name: "Brand Alpha",
-    industry: "FMCG",
-    logo: "/brand-logos/brand-alpha.png",
-  },
-  {
-    name: "Brand Beta",
-    industry: "Jewellery",
-    logo: "/brand-logos/brand-beta.png",
-  },
-  {
-    name: "Brand Gamma",
-    industry: "Hospitality",
-    logo: "/brand-logos/brand-gamma.png",
-  },
-  {
-    name: "Brand Delta",
-    industry: "Education",
-    logo: "/brand-logos/brand-delta.png",
-  },
-  {
-    name: "Brand Epsilon",
-    industry: "D2C",
-    logo: "/brand-logos/brand-epsilon.png",
-  },
-  {
-    name: "Brand Zeta",
+    name: "Impex",
     industry: "Retail",
-    logo: "/brand-logos/brand-zeta.png",
+    logo: "/brand-logos/imp.png",
   },
   {
-    name: "Brand Eta",
+    name: "Seematti",
+    industry: "Fashion",
+    logo: "/brand-logos/seemattii.png",
+  },
+  {
+    name: "BK Couture",
+    industry: "Fashion",
+    logo: "/brand-logos/bk-couture.png",
+  },
+  {
+    name: "Keerthi",
+    industry: "Retail",
+    logo: "/brand-logos/keerthi.png",
+  },
+  {
+    name: "Nirapara",
     industry: "FMCG",
-    logo: "/brand-logos/brand-eta.png",
+    logo: "/brand-logos/nirapara.png",
   },
   {
-    name: "Brand Theta",
-    industry: "Family Business",
-    logo: "/brand-logos/brand-theta.png",
+    name: "Kalyan Hypermarket",
+    industry: "Retail",
+    logo: "/brand-logos/kalyanhyper.png",
+  },
+  {
+    name: "AGP",
+    industry: "Retail",
+    logo: "/brand-logos/agp.png",
+  },
+  {
+    name: "Eduport",
+    industry: "Education",
+    logo: "/brand-logos/eduport.png",
+  },
+  {
+    name: "SleepSync",
+    industry: "D2C",
+    logo: "/brand-logos/sleepsync.png",
+  },
+  {
+    name: "Swarnam",
+    industry: "Jewellery",
+    logo: "/brand-logos/swarnam.png",
   },
 ];
