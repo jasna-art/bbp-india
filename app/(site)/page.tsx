@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/eyebrow";
 import { SectionHeader } from "@/components/section-header";
