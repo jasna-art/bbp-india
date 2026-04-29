@@ -39,7 +39,7 @@ export const CLIENTS: readonly Client[] = [
     name: "Kalyan Hypermarket",
     industry: "Retail",
     logo: "/brand-logos/kal.png",
-    logoScale: 1.45,
+    logoScale: 1.15,
   },
   {
     name: "AGP",
@@ -57,7 +57,7 @@ export const CLIENTS: readonly Client[] = [
     name: "SleepSync",
     industry: "D2C",
     logo: "/brand-logos/sleepsync.png",
-    logoScale: 1.3,
+    logoScale: 1.15,
   },
   {
     name: "Swarnam",
