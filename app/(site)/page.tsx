@@ -276,17 +276,21 @@ export default function Home() {
           lede="A small selection of the brands we've worked with — across FMCG, retail, jewellery, hospitality, education, and D2C."
         />
         <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
-          {CLIENTS.map((client) => (
-            <li
-              key={client.name}
-              className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule"
-            >
-              <span className="heading-serif text-h4 font-bold text-ink/60">
-                {client.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+  {CLIENTS.map((client) => (
+    <li
+      key={client.name}
+      className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-8"
+    >
+      <Image
+        src={client.logo}
+        alt={`${client.name} logo`}
+        width={180}
+        height={90}
+        className="max-h-16 w-auto object-contain grayscale"
+      />
+    </li>
+  ))}
+</ul>
         <div className="mt-12">
           <TextCTA href="/stories">See the case work</TextCTA>
         </div>
