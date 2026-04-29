@@ -38,7 +38,7 @@ export const CLIENTS: readonly Client[] = [
   {
     name: "Kalyan Hypermarket",
     industry: "Retail",
-    logo: "/brand-logos/kalyan.png",
+    logo: "/brand-logos/kal.png",
     logoScale: 1.45,
   },
   {
