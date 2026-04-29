@@ -275,19 +275,24 @@ export default function Home() {
           headline={<>Eleven years. Sixty-plus brands. One instrument.</>}
           lede="A small selection of the brands we've worked with — across FMCG, retail, jewellery, hospitality, education, and D2C."
         />
-        <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
+       <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
   {CLIENTS.map((client) => (
     <li
       key={client.name}
-      className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-8"
+      className="flex h-72 items-center justify-center overflow-hidden border-b-hairline border-r-hairline border-rule p-8"
     >
-      <Image
-        src={client.logo}
-        alt={`${client.name} logo`}
-        width={260}
-  height={130}
-        className="max-h-16 w-auto object-contain grayscale"
-      />
+      <div
+        className="relative h-24 w-64"
+        style={{ transform: `scale(${client.logoScale ?? 1})` }}
+      >
+        <Image
+          src={client.logo}
+          alt={`${client.name} logo`}
+          fill
+          sizes="256px"
+          className="object-contain grayscale"
+        />
+      </div>
     </li>
   ))}
 </ul>
