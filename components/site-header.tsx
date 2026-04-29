@@ -38,7 +38,7 @@ export function SiteHeader() {
         ),
       };
     }
-
+    
     return item;
   });
 
