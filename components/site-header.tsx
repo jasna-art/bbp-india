@@ -64,7 +64,7 @@ const visibleNav = PRIMARY_NAV
           aria-label="Primary"
           className="hidden items-center gap-10 lg:flex"
         >
-          {PRIMARY_NAV.map((item) => {
+         {visibleNav.map((item) => {
             if (item.children) {
               const active = item.children.some((c) => isActive(c.href));
               const isOpen = openDropdown === item.label;
