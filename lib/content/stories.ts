@@ -33,7 +33,7 @@ const PLACEHOLDER_SECTION =
 // each entry with editor-approved copy before shipping.
 export const STORIES: readonly Story[] = [
   {
-    slug: "regional-jewellery-modernisation",
+    slug: "regional-retail-modernisation",
     category: "brand",
     industry: "Family Business",
     headline:
