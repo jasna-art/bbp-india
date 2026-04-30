@@ -35,7 +35,7 @@ export const STORIES: readonly Story[] = [
   {
     slug: "regional-retail-modernisation",
     category: "brand",
-    industry: "Family Business",
+    industry: "Textile Retail",
     headline:
       "How we launched India's first silk-led luxury couture brand.",
     dek: "Beena Kannan Couture, born inside the century-old house of Seematti — a brand-architecture engagement still in motion.",
