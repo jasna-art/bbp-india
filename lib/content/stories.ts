@@ -156,7 +156,7 @@ If your family business is at this junction, brand architecture decisions like t
   engagement: "Strategy · Positioning · Identity · Communication",
   duration: "Ongoing",
   scoreBefore: 45,
-  scoreAfter: 74,
+  scoreAfter: 69,
   leadConsultant: "Ahamed Shine & Dr. Sabira Nalakath",
   isPlaceholder: false,
   sections: {
