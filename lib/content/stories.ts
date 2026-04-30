@@ -197,25 +197,63 @@ Eduport found that question and the answer to it. Most edtech brands at this jun
 If you're entering a category that looks taken, most categories that appear locked are not. The third lane exists in almost every duopoly — but finding it requires a diagnostic that reads the incumbents' structural constraints, not just their marketing. The Brand OS™ Diagnostic is built to surface exactly this.`,
   },
 },
-  {
-    slug: "family-business-portfolio-architecture",
-    category: "brand",
-    industry: "Family Business",
-    headline:
-      "How a third-generation textiles family rebuilt a portfolio that had grown into itself.",
-    dek: "Architected master, sub, and ingredient brands so each could grow without cannibalising the others.",
-    engagement: "Brand",
-    duration: "12 months",
-    scoreBefore: 49,
-    scoreAfter: 73,
-    leadConsultant: "Ahamed Shine",
-    isPlaceholder: true,
-    sections: {
-      diagnostic: PLACEHOLDER_SECTION,
-      decision: PLACEHOLDER_SECTION,
-      deployment: PLACEHOLDER_SECTION,
-      result: PLACEHOLDER_SECTION,
-      learned: PLACEHOLDER_SECTION,
-    },
+ {
+  slug: "keerthi-nirmal-distributor-free-fmcg-house",
+  category: "brand",
+  industry: "FMCG",
+  headline:
+    "How we helped Keerthi Nirmal turn a rice brand into a distributor-free FMCG house.",
+  dek: "A 28-year-old Kerala rice mill, a multi-category brand evolution, and a direct-to-retailer architecture most FMCG houses in India are still afraid to attempt.",
+  engagement: "Identity · Packaging · Marketing · Sales · Retailer Operating Design",
+  duration: "Ongoing",
+  scoreBefore: 52,
+  scoreAfter: 71,
+  leadConsultant: "Ahamed Shine & Dr. Sabira Nalakath",
+  isPlaceholder: false,
+  sections: {
+    diagnostic: `Keerthi Nirmal has been a name on Kerala kitchen counters for nearly three decades. Founded in 1998 by Johnson Varghese, Keerthi Agro Mills built its reputation on rice — Ponni, Jaya, ASD 16, Long Grain Matta, the staples of Malayali cooking. The mill in Kalady grew quietly into one of South India's largest rice processors, and the Keerthi Nirmal name became, for an entire generation of households, simply the rice brand you trust.
+
+When the leadership came to us, the business was thriving but the brand was constrained. Three pressures had arrived at the same time. The next generation of consumers wanted more from a kitchen-staples brand than a single category. The traditional FMCG distribution model was steadily eroding margin at every link. And the retailer — the actual person who decides what sits at eye level on the shelf — was being progressively cut out of the conversation by every distributor-led brand in the category.
+
+The leadership had a thesis. Keerthi Nirmal could be more than a rice brand. It could be a kitchen-staples brand. And it could go to the retailer directly, bypassing the layer that had been quietly taxing the business for decades. They came to us to architect that move — strategy, identity, packaging, sales, the operational system underneath it. The work was never going to be a brand refresh. It was going to be a category re-cast and a channel rebuild at the same time.
+
+The retailer is the person who decides what sits at eye level on the shelf. Most FMCG distribution models cut them out of the conversation entirely.`,
+
+    decision: `Most rice brands extending into FMCG make the same mistake. They add a sugar SKU, a salt SKU, a jaggery SKU, slap the existing logo on each, and push them through the same distribution stack. The category extension is real, but the brand reads as a rice brand with adjacent products. Consumers don't move it from the rice shelf to the staples shelf in their mental category map. The expansion looks like growth on paper and reads like opportunism on the shelf.
+
+We proposed a different sequence. Re-architect the brand first, expand the category second, rebuild the channel third. Each step was a precondition for the next. The brand had to be repositioned as a kitchen-staples house — visually, verbally, structurally — before new categories could ride on it. The category extension had to be coherent — every SKU answering the same kitchen-staple promise — before the retailer would carry the expanded range. And the retailer had to be reached directly — not through the traditional distributor stack — for the unit economics of the new model to work.
+
+Direct-to-retailer is structurally rare in Indian FMCG. The distributor layer takes its margin in exchange for credit, last-mile logistics, and trade relationships that have been built over generations. Removing it is not a marketing decision. It is an operational rebuild. We told the leadership this in the diagnostic read-out, and we told them what it would take. They backed the work in full.`,
+
+    deployment: `The engagement ran across five practices, each in service of the same outcome. The work is ongoing in each of them.
+
+Identity. We rebuilt the visual brand as a kitchen-staples house, not a rice mill. The new identity carries across rice, sugar, salt, jaggery, jaggery powder, crystal salt, and pathiru podi — each SKU coherent with the others without ever looking like a line extension. On the shelf, the brand reads as one. In the catalogue, the architecture is what holds the range together.
+
+Packaging. Every SKU was redesigned to live on a retailer's shelf, not a distributor's warehouse. Hierarchy of information, language hierarchy — Malayalam alongside English where it earns its place — shelf presence, scan-friendly category cues: each decision was made for the moment a consumer is choosing between Keerthi Nirmal and an unbranded sack of the same grain six inches away.
+
+Marketing revamp. The communication strategy moved the brand from a single-category rice voice to a multi-category staples voice — without losing the trust that the rice brand had earned over twenty-eight years. The blog, the campaign work, the founder-led storytelling, the export communications: every layer now operates on one architecture.
+
+Sales revamp. This was the hardest single piece of work. The sales organisation had been built for distributor handoff. We rebuilt it for direct retailer engagement — different team structure, different incentive design, different cadence, different metrics. The sales force now thinks about retailer relationships the way a distributor used to, with the brand sitting on the right side of that relationship instead of behind it.
+
+Retailer operating model. Direct-to-retailer at scale is impossible without an operating model that replaces what the distributor used to do — order capture, credit management, route logic, and the day-to-day texture of retailer relationships. We shaped the strategy and the operating design for that layer. The client built the technology that runs it. The two pieces of work moved in step, with the brand-side architecture defining what the system needed to do before the technical build began.
+
+Each of those choices — the staples-house repositioning, the direct-to-retailer architecture, the operational system that replaces the distributor — was specific, contested, and deliberate. The reasoning lives inside the engagement. Clients see the working. Public Stories carry only the result.`,
+
+    result: `Keerthi Nirmal is now one of Kerala's leading direct-to-retailer FMCG brands. The brand has moved decisively past its rice-only identity. The category extension into sugar, salt, jaggery, and adjacent kitchen staples now reads as native to the brand rather than bolted on. Retailers across Kerala carry the full Keerthi Nirmal range as a single decision, not a series of separate ones.
+
+The direct-to-retailer model is doing what it was designed to do. Margin that used to live in the distributor layer now lives inside the business — funding faster product development, more competitive consumer pricing, and the operational infrastructure that the model itself depends on. The retailer now sees the brand as a partner with a direct relationship, which has changed the terms of every conversation about shelf space, payment, and new SKU acceptance.
+
+The export business has scaled in parallel. Keerthi Nirmal positions itself, in current trade communications, as one of the world's largest exporters of Matta rice — carrying the Kerala-staples story to the diaspora, where the brand-trust premium compounds further.
+
+The work is not finished. The architecture is settled. The next surfaces — deeper retailer-system capability, category extensions still in pipeline, geographic expansion beyond the home state — are all in motion.`,
+
+    learned: `The most expensive layer in Indian FMCG is the one most founders refuse to remove. The distributor takes a margin that compounds over every transaction, every year, every category extension, until the brand has paid more for distribution than it has earned in pure brand premium.
+
+Removing that layer is not a marketing decision. It is an operating-system decision — and the brand has to be ready, the category coherent, the sales force rebuilt, and the operational architecture in place before the move is even survivable. Most FMCG houses cannot do this. The ones that can, compound permanently.
+
+Keerthi Nirmal did. The work continues.
+
+If your FMCG business is at this junction, channel architecture decisions like this one are some of the most consequential and least understood moves in Indian FMCG. The Brand OS™ Diagnostic surfaces whether the business is structurally ready to attempt them — and what needs to ship before the move becomes survivable.`,
   },
+},
 ];
