@@ -93,7 +93,7 @@ export default function StoryPage({ params }: { params: Params }) {
 
       {/* Decision */}
       <section className="container-bbp section-y">
-        <Eyebrow>The decision</Eyebrow>
+<Eyebrow>The brief we wrote back.</Eyebrow>
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
           <p>{story.sections.decision}</p>
         </div>
@@ -101,7 +101,7 @@ export default function StoryPage({ params }: { params: Params }) {
 
       {/* Deployment */}
       <section className="container-bbp section-y">
-        <Eyebrow>The deployment</Eyebrow>
+<Eyebrow>What we built.</Eyebrow>
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
           <p>{story.sections.deployment}</p>
         </div>
@@ -109,7 +109,7 @@ export default function StoryPage({ params }: { params: Params }) {
 
       {/* Result */}
       <section className="container-bbp section-y">
-        <Eyebrow>The result</Eyebrow>
+       <Eyebrow>Five years on.</Eyebrow>
         <div className="mt-8">
           <ScoreDisplay
             before={story.scoreBefore}
@@ -123,7 +123,7 @@ export default function StoryPage({ params }: { params: Params }) {
 
       {/* What we learned */}
       <section className="container-bbp section-y">
-        <Eyebrow>What we learned</Eyebrow>
+        <Eyebrow>The argument, in one line.</Eyebrow>
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
           <p>{story.sections.learned}</p>
         </div>
