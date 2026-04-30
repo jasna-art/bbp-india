@@ -85,7 +85,7 @@ export default function StoryPage({ params }: { params: Params }) {
 
       {/* Diagnostic */}
       <section className="container-bbp section-y">
-        <Eyebrow>The diagnostic</Eyebrow>
+        <Eyebrow>The situation we walked into.</Eyebrow>
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
           <p>{story.sections.diagnostic}</p>
         </div>
