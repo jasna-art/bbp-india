@@ -8,7 +8,7 @@ import { BriefForm } from "./brief-form";
 export const metadata: Metadata = {
   title: "Brand Consultancy in Kochi, Kerala, India | BBP India",
   description:
-    "Three ways to start with BBP — book the Brand OS™ Diagnostic, send a brief, or bring us a venture. Kochi office. shine@bbp-india.com.",
+    "Three ways to start with BBP: book the Brand OS™ Diagnostic, send a brief, or bring us a venture. Visit our Kochi office or email shine@bbp-india.com.",
   alternates: { canonical: "/connect" },
 };
 
