@@ -147,7 +147,6 @@ If your family business is at this junction, brand architecture decisions like t
     },
   },
   {
-    {
   slug: "eduport-third-lane-positioning",
   category: "brand",
   industry: "Education",
