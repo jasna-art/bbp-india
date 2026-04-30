@@ -35,12 +35,12 @@ export const STORIES: readonly Story[] = [
   {
     slug: "regional-jewellery-modernisation",
     category: "brand",
-    industry: "Jewellery",
+    industry: "Textile",
     headline:
       "How we launched India's first silk-led luxury couture brand.",
     dek: "Beena Kannan Couture, born inside the century-old house of Seematti — a brand-architecture engagement still in motion.",
     engagement: "Brand · Experience",
-    duration: "14 months",
+    duration: "Ongoing",
     scoreBefore: 47,
     scoreAfter: 78,
     leadConsultant: "Ahamed Shine",
