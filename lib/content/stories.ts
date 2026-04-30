@@ -46,9 +46,7 @@ export const STORIES: readonly Story[] = [
     leadConsultant: "Ahamed Shine & Dr. Sabira Nalakath",
     isPlaceholder: false,
     sections: {
-    diagnostic: `The situation we walked into.
-
-Seematti is a brand Kerala has loved for more than a century. Founded in 1905, it has dressed three generations of brides through its flagship stores in Kottayam and Kochi. The house is unmistakably the queen of Kanjeevaram silks in the South. The fourth generation of brides was beginning to choose differently.
+    diagnostic: `Seematti is a brand Kerala has loved for more than a century. Founded in 1905, it has dressed three generations of brides through its flagship stores in Kottayam and Kochi. The house is unmistakably the queen of Kanjeevaram silks in the South. The fourth generation of brides was beginning to choose differently.
 
 When the leadership came to us in 2020, the conversation was not yet about a new brand. It was about a quieter, sharper concern. The bride who would walk into Seematti five years from then would not be choosing the way her mother had. She wanted a name attributable to a person, not a department. She wanted couture, not curation. She wanted to wear a designer.
 
@@ -56,25 +54,19 @@ This is the silent crisis of every successful Indian retail house. The brand is 
 
 The brand is loved by the previous decision-maker. It has not yet failed with the current decision-maker.`,
 
-    decision: `The brief we wrote back.
-
-Most family businesses at this junction try one of three answers, and most of them fail. Modernise the parent and lose the customer who loves it. Discount it to chase the daughter and erode the premium. Bolt on a sub-brand that confuses both audiences. Bring in an external designer name the family will never own.
+    decision: `Most family businesses at this junction try one of three answers, and most of them fail. Modernise the parent and lose the customer who loves it. Discount it to chase the daughter and erode the premium. Bolt on a sub-brand that confuses both audiences. Bring in an external designer name the family will never own.
 
 We proposed the harder fourth answer. Architect a separate brand, named for the designer, designed to live in a different price-and-occasion territory, while leaving Seematti exactly as it has always been. Different brand, different price, different occasion, different audience. Same trust, transferred.
 
 The work was comprehensive — strategy, identity, experience, launch. We worked alongside Beena Kannan, the third-generation designer, and the Seematti leadership team across roughly nine months of pre-launch architecture before the brand had a name, a logo, or a flagship address.`,
 
-    deployment: `What we built.
-
-Beena Kannan Couture launched in March 2021. The unveiling was not a store opening; it was a runway show at the Bolgatty Grand Hyatt in Kochi, with three mood-boarded collections walking with fusion music. Couture brands launch with shows. Retail extensions launch with openings. The signal had to land before the brand opened its doors.
+    deployment: `Beena Kannan Couture launched in March 2021. The unveiling was not a store opening; it was a runway show at the Bolgatty Grand Hyatt in Kochi, with three mood-boarded collections walking with fusion music. Couture brands launch with shows. Retail extensions launch with openings. The signal had to land before the brand opened its doors.
 
 The flagship sits on the fifth floor of the Seematti building on MG Road, Kochi. Seventeen and a half thousand square feet, by-appointment, invite-only. The bride coming up from Seematti gains credibility on the couture brand. The bride coming directly to the couture brand loses nothing about Seematti. Two brands, one address, two price tiers, one customer journey.
 
 The brand was positioned as India's first silk-led luxury couture, anchored on bridal. Each of those choices — silk-led not designer-led, bridal not lifestyle, in-flagship not stand-alone — was specific, contested, and deliberate. The reasoning lives inside the engagement. Clients see the working. Public Stories carry only the result.`,
 
-    result: `Five years on.
-
-The architecture has held.
+    result: `The architecture has held.
 
 Seematti has not been cannibalised. The retail business continues at scale, with a renovated Kottayam showroom in 2024 and a continuing physical footprint expansion. The bridal Kanjeevaram retail business that Seematti owned before the launch still belongs to Seematti.
 
