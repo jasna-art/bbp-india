@@ -76,9 +76,7 @@ And Beena Kannan herself now operates as a recognisable Indian designer name, wi
 
 The work is not finished. The architecture is settled. The next surface — digital, distribution, expansion — sits on the practice's desk.`,
 
-    learned: `The argument, in one line.
-
-A brand that has earned a hundred years of trust is not a constraint on the next move. It is the capital the next move spends.
+    learned: `A brand that has earned a hundred years of trust is not a constraint on the next move. It is the capital the next move spends.
 
 Beena Kannan Couture spent that capital well. Most family businesses that arrive at this junction don't.
 
