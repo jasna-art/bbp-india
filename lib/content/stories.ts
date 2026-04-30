@@ -37,8 +37,8 @@ export const STORIES: readonly Story[] = [
     category: "brand",
     industry: "Jewellery",
     headline:
-      "How a 56-year-old jewellery brand became the most-considered name in Kerala.",
-    dek: "Modernised the brand for a new generation of consumers without breaking the equity that took five decades to build.",
+      "How we launched India's first silk-led luxury couture brand.",
+    dek: "Beena Kannan Couture, born inside the century-old house of Seematti — a brand-architecture engagement still in motion.",
     engagement: "Brand · Experience",
     duration: "14 months",
     scoreBefore: 47,
