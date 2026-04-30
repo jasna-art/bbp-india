@@ -33,20 +33,19 @@ const PLACEHOLDER_SECTION =
 // each entry with editor-approved copy before shipping.
 export const STORIES: readonly Story[] = [
   {
-   {
-  slug: "regional-jewellery-modernisation",
-  category: "brand",
-  industry: "Family Business",
-  headline:
-    "How we launched India's first silk-led luxury couture brand.",
-  dek: "Beena Kannan Couture, born inside the century-old house of Seematti — a brand-architecture engagement still in motion.",
-  engagement: "Strategy · Identity · Experience · Launch",
-  duration: "Ongoing since 2020",
-  scoreBefore: 47,
-  scoreAfter: 78,
-  leadConsultant: "Ahamed Shine & Dr. Sabira Nalakath",
-  isPlaceholder: false,
-  sections: {
+    slug: "regional-jewellery-modernisation",
+    category: "brand",
+    industry: "Family Business",
+    headline:
+      "How we launched India's first silk-led luxury couture brand.",
+    dek: "Beena Kannan Couture, born inside the century-old house of Seematti — a brand-architecture engagement still in motion.",
+    engagement: "Strategy · Identity · Experience · Launch",
+    duration: "Ongoing since 2020",
+    scoreBefore: 47,
+    scoreAfter: 78,
+    leadConsultant: "Ahamed Shine & Dr. Sabira Nalakath",
+    isPlaceholder: false,
+    sections: {
     diagnostic: `The situation we walked into.
 
 Seematti is a brand Kerala has loved for more than a century. Founded in 1905, it has dressed three generations of brides through its flagship stores in Kottayam and Kochi. The house is unmistakably the queen of Kanjeevaram silks in the South. The fourth generation of brides was beginning to choose differently.
