@@ -8,6 +8,7 @@ import { ESSAYS, type Essay } from "@/lib/content/essays";
 import { SITE_URL } from "@/lib/nav";
 
 type Params = { slug: string };
+
 const ESSAY_SEO: Record<
   string,
   {
@@ -55,6 +56,11 @@ const ESSAY_SEO: Record<
     ],
   },
 };
+
+export function generateStaticParams(): Params[] {
+  return ESSAYS.map((e) => ({ slug: e.slug }));
+}
+
 export function generateMetadata({
   params,
 }: {
@@ -94,28 +100,28 @@ function getEssay(slug: string): Essay {
 
 export default function EssayPage({ params }: { params: Params }) {
   const essay = getEssay(params.slug);
+  const seo = ESSAY_SEO[essay.slug];
 
- const seo = ESSAY_SEO[essay.slug];
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: seo?.title?.replace(" | BBP India", "") ?? essay.title,
+    alternativeHeadline: essay.title,
+    description: seo?.description ?? essay.dek,
+    author: {
+      "@type": "Person",
+      name: essay.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "BBP India",
+      url: SITE_URL,
+    },
+    datePublished: essay.publishedISO,
+    dateModified: essay.publishedISO,
+    mainEntityOfPage: `${SITE_URL}/thinking/${essay.slug}`,
+  };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: seo?.title?.replace(" | BBP India", "") ?? essay.title,
-  alternativeHeadline: essay.title,
-  description: seo?.description ?? essay.dek,
-  author: {
-    "@type": "Person",
-    name: essay.author,
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "BBP India",
-    url: SITE_URL,
-  },
-  datePublished: essay.publishedISO,
-  dateModified: essay.publishedISO,
-  mainEntityOfPage: `${SITE_URL}/thinking/${essay.slug}`,
-};
   return (
     <main id="main">
       <script
@@ -126,13 +132,17 @@ const articleSchema = {
       {/* Hero */}
       <section className="container-bbp pt-32 pb-12 lg:pt-48 lg:pb-16">
         <BackLink href="/thinking" label="All essays" className="mb-10" />
+
         <Eyebrow>Thinking · {essay.categoryLabel}</Eyebrow>
+
         <h1 className="heading-serif text-h1 mt-8 max-w-[24ch] font-bold tracking-tight">
           {essay.title}
         </h1>
+
         <p className="heading-serif mt-8 max-w-reading text-[28px] italic leading-snug text-muted">
           {essay.dek}
         </p>
+
         <p className="mt-10 font-sans text-small text-muted">
           By {essay.author} · {essay.authorRole} · Published{" "}
           {new Date(essay.publishedISO).toLocaleDateString("en-IN", {
@@ -156,13 +166,16 @@ const articleSchema = {
       <section className="container-bbp section-y">
         <div className="grid max-w-reading grid-cols-1 gap-6 border-t-heavy border-ink pt-8 md:grid-cols-[120px_1fr]">
           <DummyImage aspect="square" label={essay.author} />
+
           <div className="flex flex-col gap-3">
             <p className="font-sans text-body font-semibold text-ink">
               About {essay.author}
             </p>
+
             <p className="font-sans text-small italic text-muted">
               {essay.authorRole}
             </p>
+
             {essay.authorBio ? (
               <p className="font-sans text-body text-ink">{essay.authorBio}</p>
             ) : null}
@@ -175,6 +188,7 @@ const articleSchema = {
         <p className="heading-serif mb-8 max-w-reading text-h3 font-bold text-ink">
           If this resonated, the next one will too. Subscribe to BBP Thinking.
         </p>
+
         <SubscribeBlock />
       </section>
     </main>
