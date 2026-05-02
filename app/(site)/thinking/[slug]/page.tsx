@@ -8,7 +8,53 @@ import { ESSAYS, type Essay } from "@/lib/content/essays";
 import { SITE_URL } from "@/lib/nav";
 
 type Params = { slug: string };
+const ESSAY_SEO: Record<
+  string,
+  {
+    title: string;
+    description: string;
+    keywords: string[];
+  }
+> = {
+  "strategic-inflection-point-ai": {
+    title:
+      "How AI Is Forcing Indian Brands Into a Strategic Inflection Point | BBP India",
+    description:
+      "AI is the strategic inflection point of this decade for Indian brands. How founders, CMOs, and family businesses should rebuild brand strategy, customer experience, and margin architecture before the window closes.",
+    keywords: [
+      "AI brand strategy India",
+      "strategic inflection point",
+      "AI for Indian businesses",
+      "brand strategy AI",
+    ],
+  },
 
+  "icarus-paradox": {
+    title: "The Icarus Paradox: Why Successful Indian Brands Fail | BBP India",
+    description:
+      "The most successful Indian brands fail in predictable ways. The Icarus Paradox explains why — and what founders, family businesses, and CMOs can do to prevent it.",
+    keywords: [
+      "Icarus paradox business",
+      "why brands fail India",
+      "brand failure case studies",
+      "successful brand decline",
+    ],
+  },
+
+  "transactional-velocity": {
+    title:
+      "Transactional Velocity: The Metric That Replaces Sales for D2C Brands | BBP India",
+    description:
+      'Why "sales" is the wrong metric for D2C brands in India — and what to measure instead. Transactional velocity explained, with implications for brand strategy, pricing, and growth.',
+    keywords: [
+      "D2C metrics India",
+      "transactional velocity",
+      "D2C brand strategy",
+      "D2C growth metrics",
+      "sales velocity D2C",
+    ],
+  },
+};
 export function generateStaticParams(): Params[] {
   return ESSAYS.map((e) => ({ slug: e.slug }));
 }
