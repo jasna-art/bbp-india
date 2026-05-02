@@ -55,21 +55,34 @@ const ESSAY_SEO: Record<
     ],
   },
 };
-export function generateStaticParams(): Params[] {
-  return ESSAYS.map((e) => ({ slug: e.slug }));
-}
-
 export function generateMetadata({
   params,
 }: {
   params: Params;
 }): Metadata {
   const essay = ESSAYS.find((e) => e.slug === params.slug);
-  if (!essay) return {};
+
+  if (!essay) {
+    return {
+      title: "Essay not found | BBP India",
+    };
+  }
+
+  const seo = ESSAY_SEO[essay.slug];
+
   return {
-    title: essay.title,
-    description: essay.dek,
-    alternates: { canonical: `/thinking/${essay.slug}` },
+    title: seo?.title ?? `${essay.title} | BBP India`,
+    description: seo?.description ?? essay.dek,
+    keywords: seo?.keywords,
+    alternates: {
+      canonical: `/thinking/${essay.slug}`,
+    },
+    openGraph: {
+      title: seo?.title ?? essay.title,
+      description: seo?.description ?? essay.dek,
+      type: "article",
+      url: `${SITE_URL}/thinking/${essay.slug}`,
+    },
   };
 }
 
