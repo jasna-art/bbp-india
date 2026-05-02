@@ -25,6 +25,52 @@ const PLACEHOLDER_BODY = `<p>Full essay published soon.</p>`;
 // illustrative; replace each entry with editor-approved copy before shipping.
 export const ESSAYS: readonly Essay[] = [
   {
+    slug: "isha-ravi-digital-fashion-brand-ambassador",
+    category: "field-note",
+    categoryLabel: "Field Note",
+    title:
+      "Meet Isha Ravi: How BBP Built India's First Digital Fashion Brand Ambassador",
+    dek: "A 110-year-old Kerala textile house. An AI-generated muse. And the agency that connected the dots.",
+    author: "BBP Team",
+    authorRole: "Brand, Marketing, Growth and Experience Consulting Company",
+    publishedISO: "2026-05-02",
+    readingTime: "7 min read",
+    body: `
+<p>When Seematti walked onto the Kochi stage in August 2024 and introduced Isha Ravi, the air in the room shifted. She wasn't a film star. She wasn't an influencer flown in for the launch. She was India's first AI-powered fashion brand ambassador — and at BBP, we are proud to have been the team behind her.</p>
+
+<h2>The brief that didn't exist yet</h2>
+<p>Seematti is not just any brand. Founded over a century ago and led today by CEO and Lead Designer Beena Kannan, it is one of India's most respected names in bridal couture and traditional weaves. So when the conversation turned to "what's next," the answer couldn't be ordinary. It had to honour the legacy. It had to look forward. And it had to make the country pause.</p>
+
+<p>A celebrity endorsement would have been the easy path. We chose the harder one: build a brand ambassador from scratch — a face, a personality, a point of view — entirely in the digital realm.</p>
+
+<h2>Designing a person, not a poster</h2>
+<p>Isha Ravi is not a stock render. She is a character. From the early ideation stages, we worked closely with the Seematti team to define who she is: a young woman with an instinctive love for colour, a passion for travel, and the quiet confidence of someone who knows her own taste. She had to feel like someone you could meet at a Fort Kochi café and someone who could carry a Kanjivaram with the same ease as a contemporary drape.</p>
+
+<p>Every detail — her features, her wardrobe sensibility, the way she stands in a frame — was iterated dozens of times. The goal wasn't novelty. The goal was credibility. An AI ambassador only works if she feels like a real ambassador.</p>
+
+<h2>Why this matters beyond Seematti</h2>
+<p>Globally, virtual influencers have become a serious marketing category. India had watched the trend; no Indian fashion house had committed to it at the brand-ambassador level. Seematti became the first, and the launch travelled — picked up by IndiaAI, Analytics India Magazine, The Print, India West and dozens of trade publications within days.</p>
+
+<p>For us, the significance is less about being first and more about what "first" unlocks. Isha can shoot a new collection without travel logistics. She can appear in regional campaigns simultaneously. She can scale across digital touchpoints — from social to e-commerce to in-store screens — with a consistency human talent simply cannot match. For a heritage retailer modernising for a digital-first generation of brides, that is a genuine strategic edge.</p>
+
+<h2>What it took on our side</h2>
+<p>This was not a single deliverable. It was a system. Character design, generative imaging pipelines, brand-voice development, campaign rollout, social storytelling, and a launch event that turned a technology decision into a cultural moment. Our teams across creative, digital, and production ran the project end-to-end, working hand in hand with Beena Kannan and the Seematti leadership.</p>
+
+<p>As Beena Kannan said at the launch, the fusion of technology and fashion is opening new doors. We agree — and we like being the ones holding the keys.</p>
+
+<h2>The takeaway</h2>
+<p>Heritage brands are often told they have to choose: protect the legacy, or chase the future. Seematti and BBP made a different bet. Isha Ravi is proof that a 110-year-old name can lead a category it has never operated in before, if the strategy is sharp and the craft is honest.</p>
+
+<p>India's first digital fashion brand ambassador didn't arrive by accident. She was designed, debated, refined, and launched — by a Kochi agency, for a Kochi institution, with the whole country watching.</p>
+
+<p>And she's only getting started.</p>
+
+<p><strong>BBP is a Brand, Marketing, Growth and Experience Consulting Company based in Kochi. We help brands grow better.</strong></p>
+`.trim(),
+    authorBio:
+      "BBP is a Brand, Marketing, Growth and Experience Consulting Company based in Kochi. We help brands grow better.",
+  },
+  {
     slug: "valuation-trap-new-gen-indian-brands",
     category: "essay",
     categoryLabel: "Essay · Profitability Architecture",
