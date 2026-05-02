@@ -7,6 +7,7 @@ import { ESSAYS } from "@/lib/content/essays";
 const STATIC_PATHS = [
   "/",
   "/what-we-do",
+  "/brand-consultancy-india",
   "/brand-os",
   "/diagnostic",
   "/venture-studio",
@@ -29,31 +30,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}${path}`,
     lastModified: now,
     changeFrequency: "monthly",
-    priority: path === "/" ? 1.0 : 0.7,
+    priority:
+      path === "/"
+        ? 1.0
+        : path === "/brand-consultancy-india"
+          ? 0.9
+          : 0.7,
   }));
 
-  const solutionEntries: MetadataRoute.Sitemap = SOLUTION_SLUGS.map(
-    (slug) => ({
-      url: `${SITE_URL}/solutions/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    }),
-  );
+  const solutionEntries: MetadataRoute.Sitemap = SOLUTION_SLUGS.map((slug) => ({
+    url: `${SITE_URL}/solutions/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
 
-  const storyEntries: MetadataRoute.Sitemap = STORIES.map((s) => ({
-    url: `${SITE_URL}/stories/${s.slug}`,
+  const storyEntries: MetadataRoute.Sitemap = STORIES.map((story) => ({
+    url: `${SITE_URL}/stories/${story.slug}`,
     lastModified: now,
     changeFrequency: "yearly",
     priority: 0.6,
   }));
 
-  const essayEntries: MetadataRoute.Sitemap = ESSAYS.map((e) => ({
-    url: `${SITE_URL}/thinking/${e.slug}`,
-    lastModified: new Date(e.publishedISO),
+  const essayEntries: MetadataRoute.Sitemap = ESSAYS.map((essay) => ({
+    url: `${SITE_URL}/thinking/${essay.slug}`,
+    lastModified: new Date(essay.publishedISO),
     changeFrequency: "yearly",
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...solutionEntries, ...storyEntries, ...essayEntries];
+  return [
+    ...staticEntries,
+    ...solutionEntries,
+    ...storyEntries,
+    ...essayEntries,
+  ];
 }
