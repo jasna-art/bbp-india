@@ -95,17 +95,27 @@ function getEssay(slug: string): Essay {
 export default function EssayPage({ params }: { params: Params }) {
   const essay = getEssay(params.slug);
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: essay.title,
-    description: essay.dek,
-    author: { "@type": "Person", name: essay.author },
-    datePublished: essay.publishedISO,
-    publisher: { "@type": "Organization", name: "BBP India" },
-    mainEntityOfPage: `${SITE_URL}/thinking/${essay.slug}`,
-  };
+ const seo = ESSAY_SEO[essay.slug];
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: seo?.title?.replace(" | BBP India", "") ?? essay.title,
+  alternativeHeadline: essay.title,
+  description: seo?.description ?? essay.dek,
+  author: {
+    "@type": "Person",
+    name: essay.author,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "BBP India",
+    url: SITE_URL,
+  },
+  datePublished: essay.publishedISO,
+  dateModified: essay.publishedISO,
+  mainEntityOfPage: `${SITE_URL}/thinking/${essay.slug}`,
+};
   return (
     <main id="main">
       <script
