@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/eyebrow";
 import { SectionHeader } from "@/components/section-header";
@@ -51,6 +50,45 @@ const ENGAGEMENT_STEPS = [
     number: "03",
     title: "Deploy",
     body: "Implementation, measurement, iteration. We stay on the engagement until the result is in the P&L. Twelve months, typically.",
+  },
+];
+
+const WHY_BBP_ROWS = [
+  {
+    label: "What you get",
+    strategy: "A 120-slide deck.",
+    agency: "A campaign and a logo.",
+    bbp: "A diagnostic, a strategy, a creative system, and a result in the P&L.",
+  },
+  {
+    label: "How they bill",
+    strategy: "Hours, partners, associates.",
+    agency: "Retainers, scope creep, change orders.",
+    bbp: "RAAS — Result As A Service. One outcome, one price, one definition of done.",
+  },
+  {
+    label: "Who runs it",
+    strategy: "A partner you meet at kickoff and closeout.",
+    agency: "An account director and a rotating creative team.",
+    bbp: "A senior partner from diagnosis to deployment.",
+  },
+  {
+    label: "The instrument",
+    strategy: "Frameworks built for Fortune 500 boardrooms.",
+    agency: "Awards-shelf creative built for global headquarters.",
+    bbp: "Brand OS™ — built for Indian founders, CMOs, family businesses, and investors.",
+  },
+  {
+    label: "What you measure",
+    strategy: "Slides delivered.",
+    agency: "Impressions, reach, awards.",
+    bbp: "Composite score, margin movement, brand premium, P&L line items.",
+  },
+  {
+    label: "What happens after",
+    strategy: "They leave. You implement.",
+    agency: "They keep billing. You keep approving.",
+    bbp: "We stay until the result is in the P&L. Then we leave.",
   },
 ];
 
@@ -138,10 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
-  {/* 3. Why BBP */}
+      {/* 3. Why BBP */}
       <section className="container-bbp section-y border-y-hairline border-rule">
         <SectionHeader
           eyebrow="Why BBP?"
@@ -194,7 +229,8 @@ export default function Home() {
                 </th>
               </tr>
             </thead>
-             <tbody>
+
+            <tbody>
               {WHY_BBP_ROWS.map((row, index) => (
                 <tr
                   key={row.label}
@@ -243,14 +279,10 @@ export default function Home() {
               That’s not a positioning claim. It’s the operating model.
             </p>
           </div>
-            </div>
+        </div>
       </section>
 
-      
-
-
-      
-      {/* 3. Brand OS™ teaser */}
+      {/* 4. Brand OS™ teaser */}
       <section className="container-bbp section-y">
         <SectionHeader
           eyebrow="The instrument"
@@ -287,7 +319,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Who we work with */}
+      {/* 5. Who we work with */}
       <section className="container-bbp section-y">
         <SectionHeader
           eyebrow="Who we work with"
@@ -314,7 +346,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. How we work / RAAS */}
+      {/* 6. How we work / RAAS */}
       <section className="container-bbp section-y">
         <SectionHeader
           eyebrow="How we work"
@@ -350,7 +382,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Recent thinking */}
+      {/* 7. Recent thinking */}
       <section className="container-bbp section-y">
         <SectionHeader
           eyebrow="Thinking"
@@ -365,7 +397,10 @@ export default function Home() {
             >
               <Eyebrow tone="muted">Essay</Eyebrow>
               <h3 className="heading-serif text-h3 font-bold text-ink">
-                <Link href={essay.href} className="hover:text-muted transition-colors">
+                <Link
+                  href={essay.href}
+                  className="hover:text-muted transition-colors"
+                >
                   {essay.title}
                 </Link>
               </h3>
@@ -380,40 +415,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. Selected work */}
+      {/* 8. Selected work */}
       <section className="container-bbp section-y">
         <SectionHeader
           eyebrow="Selected work"
           headline={<>Eleven years. Sixty-plus brands. One instrument.</>}
           lede="A small selection of the brands we've worked with — across FMCG, retail, jewellery, hospitality, education, and D2C."
         />
-       <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
-  {CLIENTS.map((client) => (
-    <li
-      key={client.name}
-      className="flex h-72 items-center justify-center overflow-hidden border-b-hairline border-r-hairline border-rule p-8"
-    >
-      <div
-        className="relative h-24 w-64"
-        style={{ transform: `scale(${client.logoScale ?? 1})` }}
-      >
-        <Image
-          src={client.logo}
-          alt={`${client.name} logo`}
-          fill
-          sizes="256px"
-          className="object-contain grayscale"
-        />
-      </div>
-    </li>
-  ))}
-</ul>
+        <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
+          {CLIENTS.map((client) => (
+            <li
+              key={client.name}
+              className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule"
+            >
+              <span className="heading-serif text-h4 font-bold text-ink/60">
+                {client.name}
+              </span>
+            </li>
+          ))}
+        </ul>
         <div className="mt-12">
           <TextCTA href="/stories">See the case work</TextCTA>
         </div>
       </section>
 
-      {/* 8. The closer */}
+      {/* 9. The closer */}
       <Closer
         eyebrow="Start here"
         headline="The brand you have isn't the brand you need. We can prove it in two weeks."
