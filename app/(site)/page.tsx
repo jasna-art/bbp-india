@@ -246,7 +246,7 @@ export default function Home() {
     <main id="main">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+       dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
       />
 
       {/* 1. Hero */}
