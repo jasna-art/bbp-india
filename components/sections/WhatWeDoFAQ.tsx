@@ -19,7 +19,6 @@
  * If you edit the visible questions, edit the schemaData too.
  * ============================================================
  */
-import { WhatWeDoFAQ } from "@/components/sections/WhatWeDoFAQ";
 import Link from 'next/link';
 
 // ============================================================
