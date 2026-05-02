@@ -35,7 +35,7 @@ export const STORIES: readonly Story[] = [
     {
     slug: "sleepsync-ergonomically-engineered-sleep-system",
     category: "brand",
-    industry: "D2C Sleep",
+    industry: "D2C",
     headline:
       "How we built India's first ergonomically engineered sleep system, from scratch.",
     dek: "Sleepsync — a D2C mattress brand born inside a category that had stopped innovating. A naming, product-architecture, brand and launch engagement.",
