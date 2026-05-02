@@ -92,31 +92,155 @@ const WHY_BBP_ROWS = [
   },
 ];
 
-const organizationSchema = {
+const homepageSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "BBP India",
-  alternateName: "BBP",
-  url: SITE_URL,
-  email: "hello@bbp-india.com",
-  telephone: "+91-73564-44771",
-  foundingDate: "2016",
-  founders: [
-    { "@type": "Person", name: "Ahamed Shine" },
-    { "@type": "Person", name: "Dr. Sabira Nalakath" },
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.bbp-india.com/#organization",
+      name: "BBP India",
+      alternateName: "BBP — Brand Profitability Consultancy",
+      description:
+        "BBP India is a Brand Profitability, Sustenance, and Growth consultancy founded in 2016. We work with founders, CMOs, family businesses, and investors to diagnose what is broken in a brand using Brand OS, fix it through an operating-system approach, and turn brand into a measurable line item on the P&L.",
+      url: "https://www.bbp-india.com/",
+      logo: "https://www.bbp-india.com/logo.png",
+      image: "https://www.bbp-india.com/logo.png",
+      foundingDate: "2016",
+      founder: [
+        {
+          "@type": "Person",
+          name: "Ahamed Shine",
+          jobTitle: "Founder",
+          worksFor: {
+            "@id": "https://www.bbp-india.com/#organization",
+          },
+        },
+        {
+          "@type": "Person",
+          name: "Dr. Sabira Nalakath",
+          worksFor: {
+            "@id": "https://www.bbp-india.com/#organization",
+          },
+        },
+      ],
+      email: "hello@bbp-india.com",
+      telephone: "+91-73564-44771",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "No. 46/2978, Third Avenue, Sobha Road, Vennala",
+        addressLocality: "Kochi",
+        addressRegion: "Kerala",
+        postalCode: "682028",
+        addressCountry: "IN",
+      },
+      areaServed: [
+        { "@type": "City", name: "Kochi" },
+        { "@type": "City", name: "Bangalore" },
+        { "@type": "City", name: "Chennai" },
+        { "@type": "City", name: "Hyderabad" },
+        { "@type": "City", name: "Coimbatore" },
+        { "@type": "City", name: "Mumbai" },
+        { "@type": "City", name: "Trivandrum" },
+        { "@type": "City", name: "Calicut" },
+        { "@type": "AdministrativeArea", name: "South India" },
+        { "@type": "Country", name: "India" },
+      ],
+      serviceType: [
+        "Brand Strategy Consulting",
+        "Brand Profitability Consulting",
+        "Brand Health Diagnostics",
+        "Rebranding and Repositioning",
+        "Brand Identity Design",
+        "D2C Brand Consulting",
+        "Family Business Brand Consulting",
+        "Portfolio Brand Diagnostics for Investors",
+      ],
+      knowsAbout: [
+        "Brand profitability",
+        "Brand health diagnostics",
+        "Brand positioning",
+        "D2C brand strategy",
+        "Family business brand modernisation",
+        "CAC to LTV optimisation",
+        "Margin recovery through brand",
+        "Brand architecture",
+        "Result As A Service consulting",
+      ],
+      slogan:
+        "We don't make brands more creative. We make them more profitable.",
+      sameAs: ["https://www.linkedin.com/company/bbp-india"],
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.bbp-india.com/#brand-os",
+      name: "Brand OS — Brand Operating System Diagnostic",
+      alternateName: "Brand OS Diagnostic",
+      provider: {
+        "@id": "https://www.bbp-india.com/#organization",
+      },
+      description:
+        "Brand OS is BBP India's proprietary brand health diagnostic. It scores brands across six dimensions — Brand Vitality, Relevance Quotient, Profitability Architecture, Experience Coherence, Growth Velocity, and Future Readiness — using thirty sub-metrics and 750 weighted questions. Output is a composite Brand Health Score from 0 to 100, a tier classification, dimension scores, sub-metric breakdowns, and a sequenced 12-month roadmap.",
+      url: "https://www.bbp-india.com/brand-os",
+      areaServed: "IN",
+      serviceOutput:
+        "Composite Brand Health Score, six dimension scores, thirty sub-metric breakdowns, prioritised 12-month roadmap",
+      category: "Brand Strategy Consulting",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is BBP India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BBP India is a Brand Profitability, Sustenance, and Growth consultancy founded in Kochi in 2016. BBP works with founders, CMOs, family businesses, and investors across India to diagnose brand problems using Brand OS, a proprietary 750-question diagnostic, and fix them through an operating-system approach that ties brand directly to P&L outcomes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is Brand OS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Brand OS is BBP India's proprietary brand health diagnostic. It scores brands across six dimensions — Vitality, Relevance, Profitability, Experience, Growth, and Future Readiness — using thirty sub-metrics and 750 weighted questions. The output is a composite score from 0 to 100, a tier classification, and a sequenced 12-month roadmap.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How is BBP India different from a creative agency?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Creative agencies execute — logos, ads, content, campaigns. BBP India is a profitability consultancy: we diagnose why a brand is leaking margin, design the operating-system fix, and stay on the engagement until the result is in the P&L. We bill for outcomes, not hours, under a model called RAAS — Result As A Service.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who does BBP India work with?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BBP India works with four client profiles. Founders growing revenue but losing margin. CMOs needing to defend brand spend in front of the CFO. Family businesses whose brand was built for a consumer who no longer exists. Investors needing standardised brand health scoring across portfolio companies.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where is BBP India based?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BBP India is headquartered in Kochi, Kerala, and works with brands across India — including Bangalore, Chennai, Hyderabad, Coimbatore, Mumbai, Trivandrum, and the wider South Indian market. Engagements run on a hybrid model: on-site for stakeholder workshops and creative reviews, remote for deep work.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does a BBP India engagement take?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BBP engagements follow a three-stage model. Diagnose: 2 to 4 weeks for the Brand OS baseline. Design: 6 to 12 weeks for strategy, positioning, architecture, identity, or experience work. Deploy: typically 12 months of implementation, measurement, and iteration. We stay on the engagement until the result is in the P&L.",
+          },
+        },
+      ],
+    },
   ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "No. 46/2978, Third Avenue, Sobha Road, Vennala",
-    addressLocality: "Kochi",
-    addressRegion: "Kerala",
-    postalCode: "682028",
-    addressCountry: "IN",
-  },
-  description:
-    "India's brand profitability consultancy. Brand OS™, the PSG model, and Result As A Service.",
 };
-
 export default function Home() {
   return (
     <main id="main">
