@@ -176,111 +176,105 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Why BBP */}
-      <section className="container-bbp section-y border-y-hairline border-rule">
-        <SectionHeader
-          eyebrow="Why BBP?"
-          headline={
-            <>You shouldn’t have to hire two firms to fix one brand.</>
-          }
-        />
+     {/* 3. Why BBP */}
+<section className="container-bbp section-y">
+  <SectionHeader
+    eyebrow="Why BBP?"
+    headline={<>You shouldn’t have to hire two firms to fix one brand.</>}
+  />
 
-        <div className="mt-16 flex max-w-reading flex-col gap-8">
-          <p className="font-sans text-body text-ink">
-            Most companies solving brand problems end up running two parallel
-            engagements — a strategy consultancy for the rigor, a creative
-            agency for the execution. The strategy deck doesn’t survive contact
-            with the creative brief. The creative work drifts from the strategic
-            intent. The seam between them is where the money leaks.
-          </p>
+  <div className="mt-16 flex max-w-reading flex-col gap-8">
+    <p className="font-sans text-body text-ink">
+      Most companies solving brand problems end up running two parallel
+      engagements — a strategy consultancy for the rigor, a creative agency for
+      the execution. The strategy deck doesn’t survive contact with the creative
+      brief. The creative work drifts from the strategic intent. The seam
+      between them is where the money leaks.
+    </p>
 
-          <p className="font-sans text-body font-semibold text-ink">
-            BBP was built to close that seam.
-          </p>
-        </div>
+    <p className="font-sans text-body font-semibold text-ink">
+      BBP was built to close that seam.
+    </p>
+  </div>
 
-        <div className="mt-16 overflow-x-auto">
-          <table className="min-w-[920px] w-full border-collapse">
-            <thead>
-              <tr className="border-b-heavy border-ink">
-                <th
-                  scope="col"
-                  className="w-[18%] py-4 pr-6 text-left font-sans text-eyebrow uppercase text-ink"
-                >
-                  &nbsp;
-                </th>
-                <th
-                  scope="col"
-                  className="w-[22%] py-4 pr-6 text-left font-sans text-eyebrow uppercase text-ink"
-                >
-                  The Strategy Consultancy
-                </th>
-                <th
-                  scope="col"
-                  className="w-[22%] py-4 pr-6 text-left font-sans text-eyebrow uppercase text-ink"
-                >
-                  The Creative Agency
-                </th>
-                <th
-                  scope="col"
-                  className="w-[38%] py-4 text-left font-sans text-eyebrow uppercase text-ink"
-                >
-                  BBP
-                </th>
-              </tr>
-            </thead>
+  <div className="mt-16 overflow-x-auto border-t-hairline border-rule">
+    <table className="w-full min-w-[920px] border-collapse">
+      <thead>
+        <tr className="border-b-hairline border-rule">
+          <th
+            scope="col"
+            className="w-[18%] py-5 pr-6 text-left font-sans text-eyebrow uppercase text-muted"
+          >
+            &nbsp;
+          </th>
 
-            <tbody>
-              {WHY_BBP_ROWS.map((row, index) => (
-                <tr
-                  key={row.label}
-                  className={
-                    index === WHY_BBP_ROWS.length - 1
-                      ? "border-b-heavy border-ink"
-                      : "border-b-hairline border-rule"
-                  }
-                >
-                  <th
-                    scope="row"
-                    className="py-6 pr-6 align-top text-left font-sans text-eyebrow uppercase text-muted"
-                  >
-                    {row.label}
-                  </th>
-                  <td className="py-6 pr-6 align-top font-sans text-body text-ink">
-                    {row.strategy}
-                  </td>
-                  <td className="py-6 pr-6 align-top font-sans text-body text-ink">
-                    {row.agency}
-                  </td>
-                  <td className="py-6 align-top font-sans text-body font-semibold text-ink">
-                    {row.bbp}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+          <th
+            scope="col"
+            className="w-[22%] py-5 pr-6 text-left font-sans text-eyebrow uppercase text-muted"
+          >
+            The Strategy Consultancy
+          </th>
 
-        <div className="mt-20 max-w-[920px] border-t-hairline border-rule pt-10">
-          <p className="font-sans text-eyebrow uppercase tracking-eyebrow text-muted">
-            The integration is the point
-          </p>
+          <th
+            scope="col"
+            className="w-[22%] py-5 pr-6 text-left font-sans text-eyebrow uppercase text-muted"
+          >
+            The Creative Agency
+          </th>
 
-          <div className="mt-8 flex flex-col gap-8">
-            <p className="heading-serif text-lede text-ink">
-              A consultancy without creative capability hands you a strategy
-              your team can’t execute. An agency without strategic rigor hands
-              you creative your CFO can’t defend. BBP does both, in one
-              engagement, with one accountable partner, against one measurable
-              outcome.
-            </p>
+          <th
+            scope="col"
+            className="w-[38%] py-5 text-left font-sans text-eyebrow uppercase text-ink"
+          >
+            BBP
+          </th>
+        </tr>
+      </thead>
 
-            <p className="heading-serif text-lede italic text-muted">
-              That’s not a positioning claim. It’s the operating model.
-            </p>
-          </div>
-        </div>
-      </section>
+      <tbody>
+        {WHY_BBP_ROWS.map((row) => (
+          <tr key={row.label} className="border-b-hairline border-rule">
+            <th
+              scope="row"
+              className="py-5 pr-6 align-top text-left font-sans text-eyebrow uppercase text-muted"
+            >
+              {row.label}
+            </th>
+
+            <td className="py-5 pr-6 align-top font-sans text-small text-ink">
+              {row.strategy}
+            </td>
+
+            <td className="py-5 pr-6 align-top font-sans text-small text-ink">
+              {row.agency}
+            </td>
+
+            <td className="py-5 align-top font-sans text-small font-semibold text-ink">
+              {row.bbp}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div className="mt-16 max-w-reading">
+    <Eyebrow tone="muted">The integration is the point</Eyebrow>
+
+    <div className="mt-8 flex flex-col gap-8">
+      <p className="font-sans text-body text-ink">
+        A consultancy without creative capability hands you a strategy your team
+        can’t execute. An agency without strategic rigor hands you creative your
+        CFO can’t defend. BBP does both, in one engagement, with one accountable
+        partner, against one measurable outcome.
+      </p>
+
+      <p className="heading-serif text-lede italic text-muted">
+        That’s not a positioning claim. It’s the operating model.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* 4. Brand OS™ teaser */}
       <section className="container-bbp section-y">
