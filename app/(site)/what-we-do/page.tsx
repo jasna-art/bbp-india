@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeader } from "@/components/section-header";
+import { WhatWeDoFAQ } from "@/components/sections/WhatWeDoFAQ";
 import { TextCTA } from "@/components/text-cta";
 import { Closer } from "@/components/closer";
 
@@ -149,6 +150,8 @@ export default function WhatWeDoPage() {
           </p>
         </div>
       </section>
+            <WhatWeDoFAQ />
+
 
       {/* Closer */}
       <Closer
