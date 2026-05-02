@@ -24,6 +24,7 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "Stories", href: "/stories" },
       { label: "Thinking", href: "/thinking" },
       { label: "Venture Studio", href: "/venture-studio" },
+      { label: "Brand Consultancy India", href: "/brand-consultancy-india" },
     ],
   },
   {
