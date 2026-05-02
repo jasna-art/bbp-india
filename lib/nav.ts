@@ -24,7 +24,6 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "Stories", href: "/stories" },
       { label: "Thinking", href: "/thinking" },
       { label: "Venture Studio", href: "/venture-studio" },
-      { label: "Brand Consultancy India", href: "/brand-consultancy-india" },
     ],
   },
   {
@@ -53,6 +52,7 @@ export const FOOTER_NAV: Record<string, NavItem[]> = {
     { label: "Stories", href: "/stories" },
     { label: "Thinking", href: "/thinking" },
     { label: "Venture Studio", href: "/venture-studio" },
+   { label: "Brand Consultancy India", href: "/brand-consultancy-india" },
   ],
   Culture: [
     { label: "People", href: "/people" },
