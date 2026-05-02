@@ -32,6 +32,87 @@ const PLACEHOLDER_SECTION =
 // score deltas are illustrative — none represent a real BBP engagement. Replace
 // each entry with editor-approved copy before shipping.
 export const STORIES: readonly Story[] = [
+    {
+    slug: "sleepsync-ergonomically-engineered-sleep-system",
+    category: "brand",
+    industry: "D2C Sleep",
+    headline:
+      "How we built India's first ergonomically engineered sleep system, from scratch.",
+    dek: "Sleepsync — a D2C mattress brand born inside a category that had stopped innovating. A naming, product-architecture, brand and launch engagement.",
+    engagement: "Strategy · Product Architecture · Identity · Digital Experience · Launch",
+    duration: "Ongoing",
+    scoreBefore: 0,
+    scoreAfter: 64,
+    leadConsultant: "[Reserved for the BBP team]",
+    isPlaceholder: false,
+    sections: {
+      diagnostic: `The Indian mattress industry is a curious thing. It is large — projected to cross $3 billion before the end of the decade — and yet, until very recently, it was one of the least innovative consumer categories in the country.
+
+Most Indians were sleeping on technologies invented before they were born. Memory foam was a NASA carryover from the 1960s. Spring coils were older than that. Coir and cotton, older still. The shelves were crowded. Real product differentiation was almost absent.
+
+When the founders came to us, they didn't want to build “another mattress brand.” They wanted to build the first Indian brand where the mattress was actually designed — not assembled from off-the-shelf foam blocks and sold on price.
+
+They had access to manufacturing depth. They had the conviction. They didn't have a product architecture, a name, a brand, or a digital storefront.
+
+That is where we came in.
+
+The Indian mattress shelf had a hundred SKUs and almost no engineering. The category was waiting for a brand that took the body seriously.`,
+
+      decision: `A mattress is the only consumer product a person uses for one-third of their life and then almost never thinks about. That fact is either a marketing problem or an engineering problem. We argued it was both.
+
+If the brand was going to mean anything, three things had to be true on day one.
+
+The product had to be genuinely different — engineered, not assembled. The proposition had to be ergonomic, not “comfortable” — comfort is a felt claim, ergonomics is a measurable one. And the brand had to live D2C-first, because the legacy mattress trade in India is built on margin layers a new entrant cannot afford to inherit.
+
+We worked alongside the founding team across product architecture, naming, identity, content strategy, and the digital launch surface. The mattress had to be the hero. Everything else had to get out of its way.`,
+
+      deployment: `Sleepsync was built as a D2C mattress brand around what we positioned as India’s first ergonomically engineered sleep system.
+
+The product itself is anchored on TRIZEN Technology — a tri-layer construction combining three engineered components, each doing a job the others cannot. Ultraresponz latex on top for responsive comfort and breathability. Pneumatic memory foam in the middle for adaptive contouring under load. A high-resilience support base underneath to hold the structure under bodyweight without sagging or bottoming-out.
+
+The three layers are not merely stacked. They are zoned. Different areas of the mattress carry different firmness profiles to match how the human body actually distributes weight in sleep — heavier through the hips and shoulders, lighter through the lower back and calves. This is ergonomic zoning, and it is the engineering reason a Sleepsync mattress holds spinal alignment through the night where a uniform foam slab cannot.
+
+Around that product, we built the brand.
+
+Naming. Sleepsync — short, owned, and pronounceable across India’s language layers. Sleep that is in sync with the body, not just on top of it.
+
+Proposition. “Memory foam alone doesn’t guarantee spinal alignment — engineering does.” This is the line we asked the brand to live by. Every other category claim — cooling, pressure relief, durability — sits underneath it.
+
+Identity. Restrained. Clinical without feeling cold. The visual system was designed to look more like a sleep-science brand than a furniture brand, because the closest meaningful neighbour was healthcare, not home décor.
+
+Digital experience. A direct-to-consumer storefront engineered for a single job — explain the engineering, then sell the mattress. The site at thesleepsync.com was structured around the body, not the catalogue. A visitor learns why before they learn how much.
+
+Range architecture. The product line was structured around a clean ladder — Sleepsync 5, Sleepsync 7, and the TRIZEN Hybrid — each occupying a distinct sleeper profile rather than a price tier. A buyer chooses by body and sleep style, not by budget bracket.
+
+A buyer chooses by body and sleep style, not by budget bracket. That is what separates a sleep system from a mattress catalogue.`,
+
+      result: `Sleepsync is live. The architecture is settled. The next surfaces — performance marketing, expansion of the range, the eventual experiential layer — sit on the practice's desk.
+
+Three things make this engagement different from a typical D2C launch we are asked to run.
+
+The product is genuinely defensible. Many D2C launches we decline are skinned versions of someone else’s contract-manufactured base. Sleepsync is not.
+
+The category is structurally ready. Indian consumers are now researching sleep before buying mattresses, comparing materials, asking about spinal alignment. The vocabulary is in place; the brands have not caught up to it.
+
+The D2C economics work. Cutting the legacy distributor margin lets a Sleepsync mattress carry better engineering at a more honest price than any equivalent shelf product.
+
+We expect the brand to compound. We are watching the cohort, not the launch metrics.`,
+
+      learned: `There is a quieter idea inside this work, and it is worth saying out loud.
+
+For thirty years, India's mattress conversation has been about firmness. Hard versus soft. Spring versus foam. Orthopaedic versus regular. None of those are engineering claims; they are texture claims. They describe what the mattress feels like under the hand at the showroom. They do not describe what happens to a body across eight hours of sleep.
+
+Ergonomics is the missing axis. It is the discipline of designing objects around the human body in motion — not the body at rest, not the body at the showroom, but the body across a full night cycle of sixteen-to-thirty position changes. A sleep system worth its name has to behave correctly through all of them.
+
+That reframing — from firmness to ergonomics, from texture to engineering — is the strategic move at the heart of Sleepsync. The TRIZEN construction is the proof. The brand is the carrier.
+
+A category does not get disrupted by a better-looking version of the same product. It gets disrupted when a new brand changes the axis the category competes on.
+
+Sleepsync changed the axis from firmness to engineering. The mattress industry will follow, the way it always does — slowly, then all at once.
+
+If you are sitting on a product worth engineering inside a category that has stopped engineering, the Brand OS™ Diagnostic surfaces what the brand actually needs — proposition, architecture, or distribution — before any launch capital is spent.`,
+    },
+  },
   {
     slug: "regional-retail-modernisation",
     category: "brand",
