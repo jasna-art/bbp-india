@@ -27,7 +27,7 @@ export const ESSAYS: readonly Essay[] = [
   {
     slug: "isha-ravi-digital-fashion-brand-ambassador",
     category: "field-note",
-    categoryLabel: "Field Note",
+    categoryLabel: "Essay",
     title:
       "Meet Isha Ravi: How BBP Built India's First Digital Fashion Brand Ambassador",
     dek: "A 110-year-old Kerala textile house. An AI-generated muse. And the agency that connected the dots.",
