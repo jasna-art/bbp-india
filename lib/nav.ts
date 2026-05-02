@@ -69,4 +69,4 @@ export const FOOTER_NAV: Record<string, NavItem[]> = {
 };
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://bbp-india.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bbp-india.com";
