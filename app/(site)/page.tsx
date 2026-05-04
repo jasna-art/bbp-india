@@ -9,7 +9,6 @@ import { EditorialTable } from "@/components/editorial-table";
 import { Closer } from "@/components/closer";
 import { DIMENSIONS } from "@/lib/content/dimensions";
 import { PERSONAS } from "@/lib/content/personas";
-import { CLIENTS } from "@/lib/content/clients";
 import { SITE_URL } from "@/lib/nav";
 
 export const metadata: Metadata = {
