@@ -567,7 +567,7 @@ export default function Home() {
                 alt={`${brand.name} logo`}
                 width={220}
                 height={120}
-                className="h-auto max-h-16 w-auto max-w-[75%] object-contain opacity-70 transition duration-300 hover:opacity-100"
+                className="h-auto max-h-24 w-auto max-w-[85%] object-contain opacity-80 transition duration-300 hover:opacity-100"
               />
             </li>
           ))}
