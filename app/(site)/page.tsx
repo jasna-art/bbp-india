@@ -532,29 +532,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. Selected work */}
-      <section className="container-bbp section-y">
-        <SectionHeader
-          eyebrow="Selected work"
-          headline={<>Eleven years. Sixty-plus brands. One instrument.</>}
-          lede="A small selection of the brands we've worked with — across FMCG, retail, jewellery, hospitality, education, and D2C."
+     {/* 8. Selected work */}
+<section className="container-bbp section-y">
+  <SectionHeader
+    eyebrow="Selected work"
+    headline={<>Eleven years. Sixty-plus brands. One instrument.</>}
+    lede="A small selection of the brands we've worked with — across FMCG, retail, jewellery, hospitality, education, and D2C."
+  />
+
+  <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
+    {BRAND_LOGOS.map((brand) => (
+      <li
+        key={brand.name}
+        className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-8"
+      >
+        <img
+          src={`/brand-logos/${brand.file}`}
+          alt={`${brand.name} logo`}
+          className="max-h-16 max-w-[75%] object-contain opacity-70 transition duration-300 hover:opacity-100"
+          loading="lazy"
         />
-        <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
-          {CLIENTS.map((client) => (
-            <li
-              key={client.name}
-              className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule"
-            >
-              <span className="heading-serif text-h4 font-bold text-ink/60">
-                {client.name}
-              </span>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-12">
-          <TextCTA href="/stories">See the case work</TextCTA>
-        </div>
-      </section>
+      </li>
+    ))}
+  </ul>
+
+  <div className="mt-12">
+    <TextCTA href="/stories">See the case work</TextCTA>
+  </div>
+</section>
 
       {/* 9. The closer */}
       <Closer
