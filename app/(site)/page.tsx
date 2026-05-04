@@ -556,21 +556,22 @@ export default function Home() {
           lede="A small selection of the brands we've worked with — across FMCG, retail, jewellery, hospitality, education, and D2C."
         />
 
-        <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
-          {BRAND_LOGOS.map((brand) => (
-            <li
-              key={brand.name}
-className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-6"            >
-              <Image
-                src={`/brand-logos/${brand.file}`}
-                alt={`${brand.name} logo`}
-                width={220}
-                height={120}
-                className="h-auto max-h-24 w-auto max-w-[85%] object-contain opacity-80 transition duration-300 hover:opacity-100"
-              />
-            </li>
-          ))}
-        </ul>
+       <ul className="mt-16 grid grid-cols-2 border-l-hairline border-t-hairline border-rule sm:grid-cols-3 lg:grid-cols-4">
+  {BRAND_LOGOS.map((brand) => (
+    <li
+      key={brand.name}
+      className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-3 sm:p-4"
+    >
+      <Image
+        src={`/brand-logos/${brand.file}`}
+        alt={`${brand.name} logo`}
+        width={360}
+        height={200}
+        className="h-auto max-h-28 w-auto max-w-[92%] object-contain opacity-85 transition duration-300 hover:opacity-100 sm:max-h-32"
+      />
+    </li>
+  ))}
+</ul>
 
         <div className="mt-12">
           <TextCTA href="/stories">See the case work</TextCTA>
