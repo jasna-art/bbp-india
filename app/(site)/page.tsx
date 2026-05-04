@@ -560,8 +560,7 @@ export default function Home() {
           {BRAND_LOGOS.map((brand) => (
             <li
               key={brand.name}
-              className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-8"
-            >
+className="flex aspect-[3/2] items-center justify-center border-b-hairline border-r-hairline border-rule p-6"            >
               <Image
                 src={`/brand-logos/${brand.file}`}
                 alt={`${brand.name} logo`}
