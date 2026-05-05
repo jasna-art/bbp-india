@@ -45,7 +45,13 @@ const BRAND_LOGOS = [
   { name: "Nira", file: "nira.png" },
   { name: "Seematii", file: "seematii.png" },
   { name: "SleepSync", file: "sleepsync.png" },
+  { name: "Dev", file: "dev.png" },
   { name: "Swarnam", file: "swarnam.png" },
+  { name: "RKG", file: "rkg.png" },
+  { name: "Farmfed", file: "farmfed.png" },
+  { name: "Mefriend", file: "mefriend.png" },
+  { name: "Indroyal", file: "indro.png" },
+  { name: "Farmfed Bazaar", file: "ffbazar.png" },
 ];
 
 const ENGAGEMENT_STEPS = [
