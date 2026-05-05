@@ -53,6 +53,7 @@ const BRAND_LOGOS = [
   { name: "Mefriend", file: "mefrnd.png" },
   { name: "Indroyal", file: "indro.png" },
   { name: "Farmfed Bazaar", file: "ffbazar.png" },
+  { name: "Farmfed Bazaar", file: "kingsway" },
 ];
 
 const ENGAGEMENT_STEPS = [
