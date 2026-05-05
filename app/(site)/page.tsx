@@ -35,15 +35,15 @@ const RECENT_THINKING = [
 ];
 
 const BRAND_LOGOS = [
-  { name: "AGP", file: "agp.png" },
+  { name: "Seematii", file: "seematii.png" },
   { name: "BK Couture", file: "bk-couture.png" },
-  { name: "Eduport", file: "eduport.png" },
+  { name: "Lulu", file: "lulu.png" },
   { name: "IMP", file: "imp.png" },
   { name: "KAL", file: "kal.png" },
   { name: "Keerthi", file: "keerthi.png" },
-  { name: "Lulu", file: "lulu.png" },
+  { name: "Eduport", file: "eduport.png" },
+  { name: "AGP", file: "agp.png" },
   { name: "Nira", file: "nira.png" },
-  { name: "Seematii", file: "seematii.png" },
   { name: "SleepSync", file: "sleepsync.png" },
   { name: "Dev", file: "dev.png" },
   { name: "Swarnam", file: "swarnam.png" },
