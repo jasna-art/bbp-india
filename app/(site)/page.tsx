@@ -46,8 +46,6 @@ const BRAND_LOGOS = [
   { name: "Seematii", file: "seematii.png" },
   { name: "SleepSync", file: "sleepsync.png" },
   { name: "Swarnam", file: "swarnam.png" },
-    { name: "Swarnam", file: "swarnam.png" },
-    { name: "Swarnam", file: "swarnam.png" },
 ];
 
 const ENGAGEMENT_STEPS = [
