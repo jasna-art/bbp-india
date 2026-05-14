@@ -36,22 +36,22 @@ const RECENT_THINKING = [
 
 const BRAND_LOGOS = [
   { name: "Seematii", file: "seematii.png" },
-  { name: "BK Couture", file: "bk.png" },
-  { name: "Vinsmera", file: "vinsmera.png" },
+  { name: "BK Couture", file: "beena.png" },
+  { name: "Vinsmera", file: "vins.png" },
   { name: "KAL", file: "kal.png" },
   { name: "Keerthi", file: "keerthi.png" },
-  { name: "AGP", file: "agp.png" },
-    { name: "Farmfed Bazaar", file: "kingsway" },
-  { name: "SleepSync", file: "sleep.png" },
-  { name: "Swarnam", file: "swarn.png" },
-    { name: "Indroyal", file: "indro.png" },
+    { name: "Farmfed Bazaar", file: "kings" },
+  { name: "SleepSync", file: "slee.png" },
+  { name: "Swarnam", file: "swarnm.png" },
+    { name: "Indroyal", file: "ind.png" },
     { name: "Lulu", file: "lulu.png" },
     { name: "Nira", file: "nira.png" },
     { name: "IMP", file: "imp.png" },
-    { name: "Dev", file: "devi.png" },
+    { name: "AGP", file: "agp.png" },
+    { name: "Dev", file: "device.png" },
   { name: "RKG", file: "rkg.png" },
     { name: "Eduport", file: "eduport.png" },
-  { name: "Mefriend", file: "mefrnd.png" },
+  { name: "Mefriend", file: "mefrnd (2).png" },
 ];
 
 const ENGAGEMENT_STEPS = [
