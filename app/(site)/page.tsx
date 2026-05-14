@@ -40,6 +40,7 @@ const BRAND_LOGOS = [
   { name: "Vinsmera", file: "vins.png" },
   { name: "KAL", file: "kal.png" },
   { name: "Keerthi", file: "keerthi.png" },
+   { name: "Megamorph", file: "mega.png" },
     { name: "Kingsway", file: "kings.png" },
   { name: "Care Clean", file: "care.png" },
   { name: "Kent Constructions", file: "kent.png" },
