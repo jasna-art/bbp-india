@@ -43,7 +43,7 @@ export const STORIES: readonly Story[] = [
     duration: "Ongoing",
     scoreBefore: 0,
     scoreAfter: 64,
-    leadConsultant: "[Reserved for the BBP team]",
+    leadConsultant: "Ahamed Shine & Sabira Nalakath ,Shyam C Shaji",
     isPlaceholder: false,
     sections: {
       diagnostic: `The Indian mattress industry is a curious thing. It is large — projected to cross $3 billion before the end of the decade — and yet, until very recently, it was one of the least innovative consumer categories in the country.
