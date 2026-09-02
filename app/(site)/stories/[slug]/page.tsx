@@ -18,18 +18,55 @@ export function generateMetadata({
   params: Params;
 }): Metadata {
   const story = STORIES.find((s) => s.slug === params.slug);
+
   if (!story) return {};
+
   return {
     title: story.headline,
     description: story.dek,
-    alternates: { canonical: `/stories/${story.slug}` },
+    alternates: {
+      canonical: `/stories/${story.slug}`,
+    },
   };
 }
 
 function getStory(slug: string): Story {
   const story = STORIES.find((s) => s.slug === slug);
-  if (!story) notFound();
+
+  if (!story) {
+    notFound();
+  }
+
   return story;
+}
+
+/*
+ * Renders story content with paragraph breaks.
+ *
+ * Content in stories.ts can use blank lines between paragraphs:
+ *
+ * Paragraph one.
+ *
+ * Paragraph two.
+ *
+ * Paragraph three.
+ *
+ * This component converts those blank lines into separate <p> elements.
+ */
+function StoryParagraphs({ text }: { text: string }) {
+  return (
+    <>
+      {text
+        .split(/\n\s*\n/)
+        .map((paragraph) => paragraph.trim())
+        .filter(Boolean)
+        .map((paragraph, index) => (
+          <p key={index} className={index > 0 ? "mt-6" : ""}>
+            {paragraph}
+          </p>
+        ))}
+    </>
+  );
 }
 
 export default function StoryPage({ params }: { params: Params }) {
@@ -39,43 +76,58 @@ export default function StoryPage({ params }: { params: Params }) {
     <main id="main">
       {/* Hero */}
       <section className="container-bbp pt-32 pb-12 lg:pt-48 lg:pb-20">
-        <BackLink href="/stories" label="All stories" className="mb-10" />
+        <BackLink
+          href="/stories"
+          label="All stories"
+          className="mb-10"
+        />
+
         <Eyebrow>Story · {story.industry}</Eyebrow>
+
         <h1 className="heading-serif text-h1 mt-8 max-w-[24ch] font-bold tracking-tight">
           {story.headline}
         </h1>
+
         <p className="heading-serif text-lede mt-8 max-w-reading italic text-muted">
           {story.dek}
         </p>
+
         <dl className="mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 border-t-heavy border-ink pt-6 lg:grid-cols-4">
           <div>
             <dt className="font-sans text-eyebrow uppercase text-muted">
               Engagement
             </dt>
+
             <dd className="mt-2 font-sans text-body text-ink">
               {story.engagement}
             </dd>
           </div>
+
           <div>
             <dt className="font-sans text-eyebrow uppercase text-muted">
               Duration
             </dt>
+
             <dd className="mt-2 font-sans text-body text-ink">
               {story.duration}
             </dd>
           </div>
+
           <div>
             <dt className="font-sans text-eyebrow uppercase text-muted">
               Score change
             </dt>
+
             <dd className="mt-2 font-sans text-body text-ink">
               {story.scoreBefore} → {story.scoreAfter}
             </dd>
           </div>
+
           <div>
             <dt className="font-sans text-eyebrow uppercase text-muted">
               Lead consultant
             </dt>
+
             <dd className="mt-2 font-sans text-body text-ink">
               {story.leadConsultant}
             </dd>
@@ -86,54 +138,67 @@ export default function StoryPage({ params }: { params: Params }) {
       {/* Diagnostic */}
       <section className="container-bbp section-y">
         <Eyebrow>The situation we walked into.</Eyebrow>
+
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
-          <p>{story.sections.diagnostic}</p>
+          <StoryParagraphs text={story.sections.diagnostic} />
         </div>
       </section>
 
       {/* Decision */}
       <section className="container-bbp section-y">
-<Eyebrow>The brief we wrote back.</Eyebrow>
+        <Eyebrow>The brief we wrote back.</Eyebrow>
+
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
-          <p>{story.sections.decision}</p>
+          <StoryParagraphs text={story.sections.decision} />
         </div>
       </section>
 
       {/* Deployment */}
       <section className="container-bbp section-y">
-<Eyebrow>What we built.</Eyebrow>
+        <Eyebrow>What we built.</Eyebrow>
+
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
-          <p>{story.sections.deployment}</p>
+          <StoryParagraphs text={story.sections.deployment} />
         </div>
       </section>
 
       {/* Result */}
       <section className="container-bbp section-y">
-       <Eyebrow>Five years on.</Eyebrow>
+        <Eyebrow>Five years on.</Eyebrow>
+
         <div className="mt-8">
           <ScoreDisplay
             before={story.scoreBefore}
             after={story.scoreAfter}
           />
         </div>
+
         <div className="mt-12 max-w-reading font-sans text-body text-ink">
-          <p>{story.sections.result}</p>
+          <StoryParagraphs text={story.sections.result} />
         </div>
       </section>
 
       {/* What we learned */}
       <section className="container-bbp section-y">
         <Eyebrow>The argument, in one line.</Eyebrow>
+
         <div className="mt-8 max-w-reading font-sans text-body text-ink">
-          <p>{story.sections.learned}</p>
+          <StoryParagraphs text={story.sections.learned} />
         </div>
       </section>
 
+      {/* CTA */}
       <Closer
         eyebrow="Start here"
         headline="If your situation rhymes with this one, run the Diagnostic."
-        primary={{ label: "Book the Diagnostic", href: "/diagnostic" }}
-        secondary={{ label: "Talk to us first", href: "/connect" }}
+        primary={{
+          label: "Book the Diagnostic",
+          href: "/diagnostic",
+        }}
+        secondary={{
+          label: "Talk to us first",
+          href: "/connect",
+        }}
       />
     </main>
   );
