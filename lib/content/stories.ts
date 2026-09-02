@@ -74,11 +74,19 @@ The three layers are not merely stacked. They are zoned. Different areas of the 
 
 Around that product, we built the brand.
 
-Naming. Sleepsync — short, owned, and pronounceable across India’s language layers. Sleep that is in sync with the body, not just on top of it.
 
-Proposition. “Memory foam alone doesn’t guarantee spinal alignment — engineering does.” This is the line we asked the brand to live by. Every other category claim — cooling, pressure relief, durability — sits underneath it.
+Naming.
 
-Identity. Restrained. Clinical without feeling cold. The visual system was designed to look more like a sleep-science brand than a furniture brand, because the closest meaningful neighbour was healthcare, not home décor.
+Sleepsync — short, owned, and pronounceable across India’s language layers. Sleep that is in sync with the body, not just on top of it.
+
+
+Proposition.
+
+“Memory foam alone doesn’t guarantee spinal alignment — engineering does.” This is the line we asked the brand to live by. Every other category claim — cooling, pressure relief, durability — sits underneath it.
+
+Identity. Restrained.
+
+Clinical without feeling cold. The visual system was designed to look more like a sleep-science brand than a furniture brand, because the closest meaningful neighbour was healthcare, not home décor.
 
 Digital experience. A direct-to-consumer storefront engineered for a single job — explain the engineering, then sell the mattress. The site at thesleepsync.com was structured around the body, not the catalogue. A visitor learns why before they learn how much.
 
