@@ -61,7 +61,7 @@ export default function LearnWithUsPage() {
           </dl>
         </div>
         <div className="mt-12">
-          <TextCTA href="mailto:hello@bbp-india.com?subject=Brand%20OS%E2%84%A2%20Practitioner%20Program">
+          <TextCTA href="mailto:hello@bbp-india.com">
             Request the program brief
           </TextCTA>
         </div>
