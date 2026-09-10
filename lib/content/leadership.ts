@@ -9,9 +9,9 @@ export type Leader = {
 // names, roles, and bios before shipping.
 export const LEADERSHIP: readonly Leader[] = [
   {
-    name: "Leader One",
-    role: "Practice Lead — Brand",
-    bio: "Bio to be published alongside the team page edit.",
+    name: "Revathy",
+    role: "Agency Head",
+    // bio: "Bio to be published alongside the team page edit.",
     isPlaceholder: true,
   },
   {
