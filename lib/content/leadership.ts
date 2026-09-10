@@ -11,7 +11,7 @@ export const LEADERSHIP: readonly Leader[] = [
   {
     name: "Revathy",
     role: "Agency Head",
-    // bio: "Bio to be published alongside the team page edit.",
+    bio: "Bio to be published alongside the team page edit.",
     isPlaceholder: true,
   },
   {
