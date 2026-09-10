@@ -4,6 +4,7 @@ import { PageHero } from "@/components/page-hero";
 import { SectionHeader } from "@/components/section-header";
 import { Callout } from "@/components/callout";
 import { TextCTA } from "@/components/text-cta";
+import Image from "next/image";
 import { DummyImage } from "@/components/dummy-image";
 import { LEADERSHIP } from "@/lib/content/leadership";
 
