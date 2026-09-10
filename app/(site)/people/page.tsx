@@ -47,8 +47,8 @@ export default function PeoplePage() {
             aspect="square"
             label="Ahamed Shine"
             caption="Founder portrait pending"
-          />
-          <div className="relative aspect-square overflow-hidden bg-muted"> */}
+          /> */}
+          <div className="relative aspect-square overflow-hidden bg-muted"> 
   <Image
     src="/Shine.png"
     alt="Ahamed Shine"
