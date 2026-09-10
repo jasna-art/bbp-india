@@ -1,9 +1,11 @@
 export type Leader = {
   name: string;
   role: string;
-  bio: string;
+  bio?: string;
+  image: string;
   isPlaceholder?: boolean;
 };
+
 
 // Placeholder leadership blocks for layout review only. Replace with real
 // names, roles, and bios before shipping.
