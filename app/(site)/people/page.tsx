@@ -160,7 +160,7 @@ export default function PeoplePage() {
           {LEADERSHIP.map((leader) => (
             <article key={leader.name} className="flex flex-col gap-5">
              
-              <div className="relative aspect-square overflow-hidden rounded-[10px] bg-muted">
+              <div className="relative aspect-square overflow-hidden rounded-[20px] bg-muted">
   <Image
     src={leader.image}
     alt={leader.name}
