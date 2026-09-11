@@ -56,7 +56,7 @@ export const LEADERSHIP: readonly Leader[] = [
     name: "M. Manjitha",
     role: "Content Head",
     bio: "Bio to be published alongside the team page edit.",
-      image: "/Manjitha.png",
+      image: "/Manjtiha.png",
     isPlaceholder: true,
   },
 ];
