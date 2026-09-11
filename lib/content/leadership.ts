@@ -39,12 +39,13 @@ export const LEADERSHIP: readonly Leader[] = [
     isPlaceholder: true,
   },
   {
-    name: "Maha Shajahan",
-    role: "Creative Strategist",
+    name: "M. Manjitha",
+    role: "Content Head",
     // bio: "Bio to be published alongside the team page edit.",
-    image: "/Maha.png",
+      image: "/Manjtiha.png",
     isPlaceholder: true,
   },
+ 
   {
     name: "Cherian James",
     role: "Video & Animation Lead",
@@ -52,11 +53,11 @@ export const LEADERSHIP: readonly Leader[] = [
      image: "/Cherian.png",
     isPlaceholder: true,
   },
-    {
-    name: "M. Manjitha",
-    role: "Content Head",
+     {
+    name: "Maha Shajahan",
+    role: "Creative Strategist",
     // bio: "Bio to be published alongside the team page edit.",
-      image: "/Manjtiha.png",
+    image: "/Maha.png",
     isPlaceholder: true,
   },
 ];
