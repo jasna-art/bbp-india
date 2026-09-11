@@ -159,7 +159,16 @@ export default function PeoplePage() {
         <div className="mt-16 grid grid-cols-1 gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           {LEADERSHIP.map((leader) => (
             <article key={leader.name} className="flex flex-col gap-5">
-              <DummyImage aspect="square" label={leader.name} />
+             
+              <div className="relative aspect-square overflow-hidden rounded-[10px] bg-muted">
+  <Image
+    src={leader.image}
+    alt={leader.name}
+    fill
+    className="object-cover"
+    sizes="(min-width: 1024px) 33vw, 50vw"
+  />
+</div>
               <div className="flex flex-col gap-2">
                 <h3 className="heading-serif text-h4 font-bold text-ink">
                   {leader.name}
