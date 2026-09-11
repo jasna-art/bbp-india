@@ -44,7 +44,7 @@ export default function PeoplePage() {
           className="mt-20 grid grid-cols-1 gap-12 border-t-heavy border-ink pt-12 lg:grid-cols-[40%_1fr]"
         >
          
-         <div className="relative aspect-square overflow-hidden rounded-[10px] bg-muted">
+         <div className="relative aspect-square overflow-hidden rounded-[40px] bg-muted">
   <Image
     src="/Shine.png"
     alt="Ahamed Shine"
@@ -99,7 +99,7 @@ export default function PeoplePage() {
         >
          
 
-<div className="relative aspect-square overflow-hidden rounded-[10px] bg-muted">
+<div className="relative aspect-square overflow-hidden rounded-[40px] bg-muted">
   <Image
     src="/Sabira.png"
     alt="Dr. Sabira Nalakath"
