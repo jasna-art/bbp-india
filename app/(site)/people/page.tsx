@@ -161,13 +161,19 @@ export default function PeoplePage() {
             <article key={leader.name} className="flex flex-col gap-5">
              
               <div className="relative aspect-square overflow-hidden rounded-[20px] bg-muted">
-  <Image
-    src={leader.image}
-    alt={leader.name}
-    fill
-    className="object-cover"
-    sizes="(min-width: 1024px) 33vw, 50vw"
-  />
+  {leader.image ? (
+    <Image
+      src={leader.image}
+      alt={leader.name}
+      fill
+      className="object-cover"
+      sizes="(min-width: 1024px) 33vw, 50vw"
+    />
+  ) : (
+    <div className="flex h-full w-full items-center justify-center font-sans text-4xl font-semibold text-ink/50" aria-label={leader.name}>
+      {leader.name.split(" ").map((part) => part[0]).join("").slice(0, 2)}
+    </div>
+  )}
 </div>
               <div className="flex flex-col gap-2">
                 <h3 className="heading-serif text-h4 font-bold text-ink">
