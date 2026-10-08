@@ -11,10 +11,6 @@ export type Leader = {
 // names, roles, and bios before shipping.
 export const LEADERSHIP: readonly Leader[] = [
   {
-    name: "AKHIL THEKKINIPURAYIL",
-    role: "Head of E-commerce",
-  },
-  {
     name: "Revathy",
     role: "Agency Head",
     // bio: "Bio to be published alongside the team page edit.",
@@ -63,5 +59,25 @@ export const LEADERSHIP: readonly Leader[] = [
     // bio: "Bio to be published alongside the team page edit.",
     image: "/Maha.png",
     isPlaceholder: true,
+  },
+  {
+    name: "AKHIL THEKKINIPURAYIL",
+    role: "Head of E-commerce",
+    image: "/team/akhil-thekkinipurayil.webp",
+  },
+  {
+    name: "Alvin Jaison",
+    role: "Production Manager",
+    image: "/team/alvin-jaison.webp",
+  },
+  {
+    name: "Malavika Sasidharan",
+    role: "Retail Manager",
+    image: "/team/malavika-sasidharan.webp",
+  },
+  {
+    name: "Jasna Jabbar",
+    role: "Manager - IT",
+    image: "/team/jasna-jabbar.webp",
   },
 ];
