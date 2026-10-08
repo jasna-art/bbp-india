@@ -18,6 +18,16 @@ export const LEADERSHIP: readonly Leader[] = [
     isPlaceholder: true,
   },
   {
+    name: "Alvin Jaison",
+    role: "Production Manager",
+    image: "/team/alvin-jaison.webp",
+  },
+  {
+    name: "Jasna Jabbar",
+    role: "Manager - IT",
+    image: "/team/jasna-jabbar.webp",
+  },
+  {
     name: "Abhishek Sathyan",
     role: "Digital Marketing Manager",
     // bio: "Bio to be published alongside the team page edit.",
@@ -45,7 +55,6 @@ export const LEADERSHIP: readonly Leader[] = [
       image: "/Manjtiha.png",
     isPlaceholder: true,
   },
- 
   {
     name: "Cherian James",
     role: "Video & Animation Lead",
@@ -53,7 +62,7 @@ export const LEADERSHIP: readonly Leader[] = [
      image: "/Cherian.png",
     isPlaceholder: true,
   },
-     {
+  {
     name: "Maha Shajahan",
     role: "Creative Strategist",
     // bio: "Bio to be published alongside the team page edit.",
@@ -66,18 +75,8 @@ export const LEADERSHIP: readonly Leader[] = [
     image: "/team/akhil-thekkinipurayil.webp",
   },
   {
-    name: "Alvin Jaison",
-    role: "Production Manager",
-    image: "/team/alvin-jaison.webp",
-  },
-  {
     name: "Malavika Sasidharan",
     role: "Retail Manager",
     image: "/team/malavika-sasidharan.webp",
-  },
-  {
-    name: "Jasna Jabbar",
-    role: "Manager - IT",
-    image: "/team/jasna-jabbar.webp",
   },
 ];
