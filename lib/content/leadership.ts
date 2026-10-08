@@ -2,7 +2,7 @@ export type Leader = {
   name: string;
   role: string;
   bio?: string;
-  image: string;
+  image?: string;
   isPlaceholder?: boolean;
 };
 
@@ -10,6 +10,10 @@ export type Leader = {
 // Placeholder leadership blocks for layout review only. Replace with real
 // names, roles, and bios before shipping.
 export const LEADERSHIP: readonly Leader[] = [
+  {
+    name: "AKHIL THEKKINIPURAYIL",
+    role: "Head of E-commerce",
+  },
   {
     name: "Revathy",
     role: "Agency Head",
