@@ -14,7 +14,7 @@ export const LEADERSHIP: readonly Leader[] = [
     name: "Revathy",
     role: "Agency Head",
     // bio: "Bio to be published alongside the team page edit.",
-     image: "/Revathy.png",
+     image: "/team/revathy.webp",
     isPlaceholder: true,
   },
   {
@@ -31,7 +31,7 @@ export const LEADERSHIP: readonly Leader[] = [
     name: "Abhishek Sathyan",
     role: "Digital Marketing Manager",
     // bio: "Bio to be published alongside the team page edit.",
-     image: "/Abhishek.png",
+     image: "/team/abhishek-sathyan.webp",
     isPlaceholder: true,
   },
   {

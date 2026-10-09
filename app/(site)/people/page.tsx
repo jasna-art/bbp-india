@@ -46,7 +46,7 @@ export default function PeoplePage() {
          
          <div className="relative aspect-square overflow-hidden rounded-[40px] bg-muted">
   <Image
-    src="/Shine.png"
+    src="/team/ahamed-shine.webp"
     alt="Ahamed Shine"
     fill
     className="object-cover"
@@ -101,7 +101,7 @@ export default function PeoplePage() {
 
 <div className="relative aspect-square overflow-hidden rounded-[40px] bg-muted">
   <Image
-    src="/Sabira.png"
+    src="/team/sabira-nalakath.webp"
     alt="Dr. Sabira Nalakath"
     fill
     className="object-cover"
