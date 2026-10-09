@@ -70,7 +70,7 @@ export const LEADERSHIP: readonly Leader[] = [
     isPlaceholder: true,
   },
   {
-    name: "Akhil Thekkinipurayil",
+    name: "Akhil TP",
     role: "Head of E-commerce",
     image: "/team/akhil-thekkinipurayil.webp",
   },
